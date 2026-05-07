@@ -1,0 +1,9 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#442920"/>
+  <circle cx="980" cy="100" r="310" fill="#BC8582" opacity="0.22"/>
+  <circle cx="910" cy="520" r="260" fill="#535531" opacity="0.45"/>
+  <path d="M78 456C198 316 380 316 500 456C620 596 802 596 922 456C996 370 1087 335 1166 350" stroke="#F6F1EC" stroke-width="3" opacity="0.18"/>
+  <text x="82" y="190" fill="#F6F1EC" font-family="Georgia, 'Times New Roman', serif" font-size="94" font-weight="400">The Power Agency</text>
+  <text x="88" y="278" fill="#BC8582" font-family="Poppins, Arial, sans-serif" font-size="38" font-weight="700">Marketing estratégico para marcas em crescimento</text>
+  <text x="88" y="368" fill="#F6F1EC" opacity="0.78" font-family="Poppins, Arial, sans-serif" font-size="28" font-weight="400">Think. Plan. Action.</text>
+</svg>
