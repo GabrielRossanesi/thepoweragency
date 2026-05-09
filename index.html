@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="pt-BR" class="no-js">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Power Agency — Marketing estratégico para marcas em crescimento</title>
+    <title>The Power Agency — Strategic marketing for growing brands</title>
     <meta
       name="description"
-      content="Agência internacional de marketing estratégico especializada em conteúdo, planejamento, campanhas, redes sociais, tráfego pago e análise de performance."
+      content="International strategic marketing agency specialized in content, planning, campaigns, social media, paid traffic and performance analysis."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="The Power Agency — Marketing estratégico para marcas em crescimento" />
+    <meta property="og:title" content="The Power Agency — Strategic marketing for growing brands" />
     <meta
       property="og:description"
-      content="Agência internacional de marketing estratégico especializada em conteúdo, planejamento, campanhas, redes sociais, tráfego pago e análise de performance."
+      content="International strategic marketing agency specialized in content, planning, campaigns, social media, paid traffic and performance analysis."
     />
     <meta property="og:image" content="assets/tpa-og.svg" />
     <meta name="theme-color" content="#442920" />
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <a class="skip-link" href="#conteudo" data-i18n="skip.content">Skip to content</a>
     <div class="scroll-progress" aria-hidden="true"></div>
 
     <header class="site-header" data-header>
@@ -32,22 +32,23 @@
         <img class="brand-logo brand-logo--dark" src="assets/brand-logo-dark.png" alt="The Power Agency" width="430" height="180" />
       </a>
 
-      <nav class="desktop-nav" aria-label="Navegação principal">
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#metodo">Método TPA</a>
-        <a href="#diferenciais">Diferenciais</a>
-        <a href="#contato">Contato</a>
+      <nav class="desktop-nav" aria-label="Main navigation" data-i18n-aria-label="nav.main">
+        <a href="#sobre" data-i18n="nav.about">About</a>
+        <a href="#servicos" data-i18n="nav.services">Services</a>
+        <a href="#metodo" data-i18n="nav.method">TPA Method</a>
+        <a href="#diferenciais" data-i18n="nav.differentials">Differentials</a>
+        <a href="#contato" data-i18n="nav.contact">Contact</a>
       </nav>
 
-      <a class="header-cta" href="#contato">Fale com a agência</a>
+      <a class="header-cta" href="#contato" data-i18n="cta.header">Talk to the agency</a>
 
       <button
         class="menu-toggle"
         type="button"
-        aria-label="Abrir menu"
+        aria-label="Open menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
+        data-i18n-aria-label="menu.open"
         data-menu-toggle
       >
         <span></span>
@@ -56,19 +57,19 @@
     </header>
 
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
-      <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Menu principal">
+      <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Main menu" data-i18n-aria-label="menu.dialog">
         <div class="mobile-menu__top">
           <img src="assets/brand-logo-dark.png" alt="The Power Agency" width="430" height="180" />
-          <button class="menu-close" type="button" aria-label="Fechar menu" data-menu-close></button>
+          <button class="menu-close" type="button" aria-label="Close menu" data-i18n-aria-label="menu.close" data-menu-close></button>
         </div>
-        <nav aria-label="Navegação mobile">
-          <a href="#sobre">Sobre</a>
-          <a href="#servicos">Serviços</a>
-          <a href="#metodo">Método TPA</a>
-          <a href="#diferenciais">Diferenciais</a>
-          <a href="#contato">Contato</a>
+        <nav aria-label="Mobile navigation" data-i18n-aria-label="nav.mobile">
+          <a href="#sobre" data-i18n="nav.about">About</a>
+          <a href="#servicos" data-i18n="nav.services">Services</a>
+          <a href="#metodo" data-i18n="nav.method">TPA Method</a>
+          <a href="#diferenciais" data-i18n="nav.differentials">Differentials</a>
+          <a href="#contato" data-i18n="nav.contact">Contact</a>
         </nav>
-        <a class="mobile-menu__cta" href="#contato">Começar uma estratégia</a>
+        <a class="mobile-menu__cta" href="#contato" data-i18n="cta.mobile">Start a strategy</a>
       </div>
     </div>
 
@@ -77,20 +78,19 @@
         <div class="hero__texture" aria-hidden="true"></div>
         <div class="hero__inner">
           <div class="hero__copy reveal">
-            <p class="eyebrow">Agência internacional de marketing estratégico</p>
+            <p class="eyebrow" data-i18n="hero.eyebrow">International Strategic Marketing Agency</p>
             <h1 id="hero-title">The Power Agency</h1>
-            <p class="hero__headline">Marketing estratégico para marcas que querem crescer com direção.</p>
-            <p class="hero__text">
-              A The Power Agency une análise, planejamento e execução para construir comunicações autênticas,
-              inteligentes e conectadas ao posicionamento de cada marca.
+            <p class="hero__headline" data-i18n="hero.headline">Strategic marketing for brands ready to grow with direction.</p>
+            <p class="hero__text" data-i18n="hero.text">
+              The Power Agency combines analysis, planning and execution to build authentic, intelligent communications connected to each brand's positioning.
             </p>
             <div class="hero__actions">
-              <a class="button button--primary" href="#contato">Começar uma estratégia</a>
-              <a class="button button--ghost" href="#metodo">Conhecer metodologia</a>
+              <a class="button button--primary" href="#contato" data-i18n="hero.primary">Start a strategy</a>
+              <a class="button button--ghost" href="#metodo" data-i18n="hero.secondary">Discover the method</a>
             </div>
           </div>
 
-          <figure class="hero__visual reveal" aria-label="Composição visual da metodologia Think, Plan and Action">
+          <figure class="hero__visual reveal" aria-label="Visual composition of the Think, Plan and Action methodology" data-i18n-aria-label="hero.visualLabel">
             <img
               class="hero__mark"
               src="assets/brand-submark-light.png"
@@ -101,14 +101,14 @@
               aria-hidden="true"
             />
             <div class="strategy-orbit" aria-hidden="true">
-              <span class="orbit-item orbit-item--one">Análise</span>
-              <span class="orbit-item orbit-item--two">Conteúdo</span>
-              <span class="orbit-item orbit-item--three">Métricas</span>
+              <span class="orbit-item orbit-item--one" data-i18n="hero.chip.analysis">Analysis</span>
+              <span class="orbit-item orbit-item--two" data-i18n="hero.chip.content">Content</span>
+              <span class="orbit-item orbit-item--three" data-i18n="hero.chip.metrics">Metrics</span>
             </div>
             <div class="hero__flow" aria-hidden="true">
-              <span>Think</span>
-              <span>Plan</span>
-              <span>Action</span>
+              <span data-i18n="hero.flow.think">THINK</span>
+              <span data-i18n="hero.flow.plan">PLAN</span>
+              <span data-i18n="hero.flow.action">ACTION</span>
             </div>
           </figure>
         </div>
@@ -117,19 +117,19 @@
       <section class="section section--intro" id="sobre" aria-labelledby="intro-title">
         <div class="section__grid section__grid--intro">
           <div class="reveal">
-            <p class="section-label">Mais do que conteúdo</p>
-            <h2 id="intro-title">Conteúdo sem estratégia gera comunicação rasa.</h2>
+            <p class="section-label" data-i18n="intro.label">More than content</p>
+            <h2 id="intro-title" data-i18n="intro.title">More than content. Strategy with intention.</h2>
           </div>
           <div class="intro-copy reveal">
-            <p>
-              Por isso, antes de qualquer publicação, a The Power Agency constrói direção, intenção e posicionamento.
+            <p data-i18n="intro.text">
+              Content without strategy creates shallow communication. That is why, before any post, campaign or publication, The Power Agency builds direction, intention and positioning.
             </p>
-            <ul class="editorial-list" aria-label="Diferenciais estratégicos">
-              <li>Estratégia antes da execução</li>
-              <li>Comunicação personalizada</li>
-              <li>Análise profunda do negócio</li>
-              <li>Criatividade com direção</li>
-              <li>Acompanhamento contínuo</li>
+            <ul class="editorial-list" aria-label="Strategic differentials" data-i18n-aria-label="intro.listLabel">
+              <li data-i18n="intro.bullet.strategy">Strategy before execution</li>
+              <li data-i18n="intro.bullet.tailored">Tailored communication</li>
+              <li data-i18n="intro.bullet.analysis">Deep business analysis</li>
+              <li data-i18n="intro.bullet.creativity">Creativity with direction</li>
+              <li data-i18n="intro.bullet.tracking">Continuous performance tracking</li>
             </ul>
           </div>
         </div>
@@ -137,54 +137,55 @@
 
       <section class="section section--services" id="servicos" aria-labelledby="services-title">
         <div class="section__heading reveal">
-          <p class="section-label">Soluções completas</p>
-          <h2 id="services-title">Soluções completas para marcas em movimento</h2>
-          <p>
-            A agência combina estratégia, produção, gestão e performance em um sistema de comunicação feito para
-            sustentar crescimento.
+          <p class="section-label" data-i18n="services.label">Complete solutions</p>
+          <h2 id="services-title" data-i18n="services.title">Complete solutions for brands in motion</h2>
+          <p data-i18n="services.text">
+            From strategic planning to execution, The Power Agency develops communication systems designed to strengthen positioning, generate connection and support sustainable growth.
           </p>
         </div>
 
         <div class="service-system">
           <article class="service-group reveal">
             <span class="service-group__number">01</span>
-            <h3>Estratégia</h3>
+            <h3 data-i18n="services.strategy.title">Strategy</h3>
             <ul>
-              <li>Estratégia de conteúdo</li>
-              <li>Planejamento estratégico de comunicação</li>
-              <li>Posicionamento e comunicação</li>
-              <li>Planejamento de funil de conteúdo</li>
+              <li data-i18n="services.strategy.item1">Content strategy</li>
+              <li data-i18n="services.strategy.item2">Strategic communication planning</li>
+              <li data-i18n="services.strategy.item3">Brand positioning</li>
+              <li data-i18n="services.strategy.item4">Content funnel planning</li>
             </ul>
           </article>
 
           <article class="service-group reveal">
             <span class="service-group__number">02</span>
-            <h3>Conteúdo</h3>
+            <h3 data-i18n="services.content.title">Content</h3>
             <ul>
-              <li>Desenvolvimento de campanhas</li>
-              <li>Gerenciamento e publicação de conteúdos</li>
-              <li>Campanhas sazonais</li>
-              <li>Captação de conteúdo presencial, quando aplicável</li>
+              <li data-i18n="services.content.item1">Campaign development</li>
+              <li data-i18n="services.content.item2">Content production</li>
+              <li data-i18n="services.content.item3">Social media management</li>
+              <li data-i18n="services.content.item4">Content publishing and management</li>
             </ul>
           </article>
 
           <article class="service-group reveal">
             <span class="service-group__number">03</span>
-            <h3>Performance</h3>
+            <h3 data-i18n="services.performance.title">Performance</h3>
             <ul>
-              <li>Tráfego pago e análise de performance</li>
-              <li>Análise de métricas e resultados</li>
-              <li>Direcionamento estratégico contínuo</li>
+              <li data-i18n="services.performance.item1">Paid traffic</li>
+              <li data-i18n="services.performance.item2">Performance analysis</li>
+              <li data-i18n="services.performance.item3">Metrics and results tracking</li>
+              <li data-i18n="services.performance.item4">Campaign optimization</li>
             </ul>
           </article>
 
           <article class="service-group reveal">
             <span class="service-group__number">04</span>
-            <h3>Gestão</h3>
+            <h3 data-i18n="services.direction.title">Direction</h3>
             <ul>
-              <li>Gestão de redes sociais</li>
-              <li>Planejamento de execução</li>
-              <li>Acompanhamento de rotinas e entregas</li>
+              <li data-i18n="services.direction.item1">Continuous strategic guidance</li>
+              <li data-i18n="services.direction.item2">Seasonal campaigns</li>
+              <li data-i18n="services.direction.item3">Creative direction</li>
+              <li data-i18n="services.direction.item4">Communication formats</li>
             </ul>
           </article>
         </div>
@@ -193,65 +194,65 @@
       <section class="method" id="metodo" aria-labelledby="method-title">
         <div class="method__backdrop" aria-hidden="true"></div>
         <div class="method__header reveal">
-          <p class="section-label">Metodologia proprietária</p>
-          <h2 id="method-title">TPA — Think, Plan and Action</h2>
-          <p>Uma metodologia proprietária para transformar comunicação em estratégia.</p>
+          <p class="section-label" data-i18n="method.label">Proprietary methodology</p>
+          <h2 id="method-title" data-i18n="method.title">TPA — Think, Plan and Action</h2>
+          <p data-i18n="method.subtitle">A proprietary methodology designed to turn communication into strategy.</p>
         </div>
 
-        <div class="method-track" aria-label="Etapas da metodologia TPA">
+        <div class="method-track" aria-label="TPA methodology stages" data-i18n-aria-label="method.trackLabel">
           <div class="method-line" aria-hidden="true"></div>
 
           <article class="method-step reveal">
-            <span class="method-step__index">Think</span>
-            <h3>Pensar antes de executar</h3>
-            <p>
-              Antes de qualquer conteúdo ser criado, a agência entra em uma etapa profunda de análise e estudo para
-              entender o negócio, o público e o posicionamento desejado.
+            <span class="method-step__index" data-i18n="method.think.index">THINK</span>
+            <h3 data-i18n="method.think.title">Think before executing</h3>
+            <p data-i18n="method.think.text">
+              Before any content is created, the agency enters a deep stage of analysis and study to understand the business, the audience and the desired positioning.
             </p>
             <ul>
-              <li>Estudo de persona</li>
-              <li>Análise de concorrência</li>
-              <li>Pilares da marca</li>
-              <li>Análise SWOT</li>
-              <li>DNA de conteúdo</li>
-              <li>Linhas editoriais</li>
-              <li>Tom de voz</li>
-              <li>Personalidade da marca</li>
+              <li data-i18n="method.think.item1">Persona research</li>
+              <li data-i18n="method.think.item2">Competitive analysis</li>
+              <li data-i18n="method.think.item3">Brand pillars</li>
+              <li data-i18n="method.think.item4">SWOT analysis</li>
+              <li data-i18n="method.think.item5">Current business moment</li>
+              <li data-i18n="method.think.item6">Content DNA</li>
+              <li data-i18n="method.think.item7">Editorial lines</li>
+              <li data-i18n="method.think.item8">Tone of voice</li>
+              <li data-i18n="method.think.item9">Brand personality</li>
             </ul>
           </article>
 
           <article class="method-step reveal">
-            <span class="method-step__index">Plan</span>
-            <h3>Construção estratégica do caminho</h3>
-            <p>
-              Depois da análise, nasce um plano de execução com direção clara, cronogramas, campanhas, formatos e
-              estratégias de crescimento.
+            <span class="method-step__index" data-i18n="method.plan.index">PLAN</span>
+            <h3 data-i18n="method.plan.title">Building the strategic path</h3>
+            <p data-i18n="method.plan.text">
+              After the analysis, the agency develops a clear execution plan designed to take the brand from where it is to where it wants to go.
             </p>
             <ul>
-              <li>Estratégias de conteúdo</li>
-              <li>Campanhas</li>
-              <li>Cronogramas</li>
-              <li>Direcionamentos criativos</li>
-              <li>Formatos de comunicação</li>
-              <li>Planejamento de execução</li>
+              <li data-i18n="method.plan.item1">Content strategies</li>
+              <li data-i18n="method.plan.item2">Campaigns</li>
+              <li data-i18n="method.plan.item3">Timelines</li>
+              <li data-i18n="method.plan.item4">Creative directions</li>
+              <li data-i18n="method.plan.item5">Communication formats</li>
+              <li data-i18n="method.plan.item6">Growth strategies</li>
+              <li data-i18n="method.plan.item7">Execution planning</li>
             </ul>
           </article>
 
           <article class="method-step reveal">
-            <span class="method-step__index">Action</span>
-            <h3>Execução com acompanhamento contínuo</h3>
-            <p>
-              Com a estratégia definida, o planejamento ganha vida através da produção, publicação, campanhas, gestão e
-              análise contínua de performance.
+            <span class="method-step__index" data-i18n="method.action.index">ACTION</span>
+            <h3 data-i18n="method.action.title">Execution with continuous monitoring</h3>
+            <p data-i18n="method.action.text">
+              Once the strategic structure is defined, the plan comes to life through production, publishing, campaigns, management and performance analysis.
             </p>
             <ul>
-              <li>Produção de conteúdo</li>
-              <li>Publicações</li>
-              <li>Campanhas</li>
-              <li>Gestão de redes sociais</li>
-              <li>Acompanhamento de resultados</li>
-              <li>Reuniões mensais</li>
-              <li>Novas ações estratégicas</li>
+              <li data-i18n="method.action.item1">Content production</li>
+              <li data-i18n="method.action.item2">Publishing</li>
+              <li data-i18n="method.action.item3">Campaigns</li>
+              <li data-i18n="method.action.item4">Social media management</li>
+              <li data-i18n="method.action.item5">Results tracking</li>
+              <li data-i18n="method.action.item6">Monthly meetings</li>
+              <li data-i18n="method.action.item7">Strategic improvements</li>
+              <li data-i18n="method.action.item8">Seasonal actions</li>
             </ul>
           </article>
         </div>
@@ -260,80 +261,120 @@
       <section class="section section--difference" id="diferenciais" aria-labelledby="difference-title">
         <div class="section__grid">
           <div class="difference-copy reveal">
-            <p class="section-label">O diferencial</p>
-            <h2 id="difference-title">Estratégia, intenção e profundidade antes de qualquer publicação.</h2>
-            <p>
-              A The Power Agency considera os diferenciais reais da marca, comportamento do público, momento atual do
-              negócio, objetivos comerciais, tom de voz e personalidade antes de construir qualquer comunicação.
+            <p class="section-label" data-i18n="difference.label">Differentials</p>
+            <h2 id="difference-title" data-i18n="difference.title">Strategy, intention and depth before every publication.</h2>
+            <p data-i18n="difference.text">
+              The Power Agency considers the brand's real differentiators, audience behavior, business context, commercial objectives, tone of voice and personality before building any communication.
             </p>
           </div>
 
-          <div class="difference-points" aria-label="Pontos de profundidade estratégica">
+          <div class="difference-points" aria-label="Strategic depth points" data-i18n-aria-label="difference.pointsLabel">
             <article class="point reveal">
               <span></span>
-              <h3>Leitura de marca</h3>
-              <p>Entendimento do cenário, do público e do que torna cada negócio reconhecível.</p>
+              <h3 data-i18n="difference.point.brand.title">Brand reading</h3>
+              <p data-i18n="difference.point.brand.text">Understanding the market context, audience and what makes each business recognizable.</p>
             </article>
             <article class="point reveal">
               <span></span>
-              <h3>Direção criativa</h3>
-              <p>Ideias nascem com função, formato, intenção e relação clara com os objetivos.</p>
+              <h3 data-i18n="difference.point.direction.title">Creative direction</h3>
+              <p data-i18n="difference.point.direction.text">Ideas are shaped with purpose, format, intention and a clear relationship to business goals.</p>
             </article>
             <article class="point reveal">
               <span></span>
-              <h3>Ritmo de evolução</h3>
-              <p>Resultados são acompanhados para transformar aprendizados em novas decisões.</p>
+              <h3 data-i18n="difference.point.evolution.title">Evolution rhythm</h3>
+              <p data-i18n="difference.point.evolution.text">Results are monitored to transform learnings into sharper strategic decisions.</p>
             </article>
           </div>
         </div>
       </section>
 
       <section class="positioning" aria-labelledby="positioning-title">
-        <div class="positioning__visual reveal" aria-hidden="true">
+        <div class="positioning__visual reveal" role="group" aria-label="Strategic hotspots from The Power Agency" data-i18n-aria-label="positioning.visualLabel">
           <div class="positioning__frame">
-            <img class="positioning__pattern" src="assets/brand-pattern.png" alt="" width="1286" height="1800" loading="lazy" />
-            <img class="positioning__seal" src="assets/brand-submark-light.png" alt="" width="620" height="620" loading="lazy" />
-            <span class="positioning__tag positioning__tag--one">Leitura de marca</span>
-            <span class="positioning__tag positioning__tag--two">Direção</span>
-            <span class="positioning__tag positioning__tag--three">Crescimento</span>
+            <div class="positioning__symbol-shell" aria-hidden="true">
+              <img class="positioning__symbol" src="assets/brand-monogram.png" alt="" width="900" height="900" loading="lazy" />
+            </div>
+
+            <button
+              class="positioning-hotspot positioning-hotspot--brand"
+              type="button"
+              aria-expanded="false"
+              aria-describedby="hotspot-brand-popover"
+              data-hotspot
+            >
+              <span class="positioning-hotspot__dot" aria-hidden="true"></span>
+              <span data-i18n="positioning.hotspot.brand">Brand reading</span>
+            </button>
+            <article class="positioning-popover positioning-popover--brand" id="hotspot-brand-popover" role="tooltip">
+              <h3 data-i18n="positioning.hotspot.brand">Brand reading</h3>
+              <p data-i18n="positioning.hotspot.brandText">We analyze the brand's essence, positioning and differentiators to build coherent, strategic communication.</p>
+            </article>
+
+            <button
+              class="positioning-hotspot positioning-hotspot--direction"
+              type="button"
+              aria-expanded="false"
+              aria-describedby="hotspot-direction-popover"
+              data-hotspot
+            >
+              <span class="positioning-hotspot__dot" aria-hidden="true"></span>
+              <span data-i18n="positioning.hotspot.direction">Direction</span>
+            </button>
+            <article class="positioning-popover positioning-popover--direction" id="hotspot-direction-popover" role="tooltip">
+              <h3 data-i18n="positioning.hotspot.direction">Direction</h3>
+              <p data-i18n="positioning.hotspot.directionText">We define clear communication, content and campaign paths based on goals, market context and audience behavior.</p>
+            </article>
+
+            <button
+              class="positioning-hotspot positioning-hotspot--growth"
+              type="button"
+              aria-expanded="false"
+              aria-describedby="hotspot-growth-popover"
+              data-hotspot
+            >
+              <span class="positioning-hotspot__dot" aria-hidden="true"></span>
+              <span data-i18n="positioning.hotspot.growth">Growth</span>
+            </button>
+            <article class="positioning-popover positioning-popover--growth" id="hotspot-growth-popover" role="tooltip">
+              <h3 data-i18n="positioning.hotspot.growth">Growth</h3>
+              <p data-i18n="positioning.hotspot.growthText">We turn strategy into continuous execution, tracking results and creating actions that generate real evolution for the brand.</p>
+            </article>
           </div>
         </div>
         <div class="positioning__copy reveal">
-          <p class="section-label">Posicionamento</p>
-          <h2 id="positioning-title">Uma agência estratégica, humana e inteligente.</h2>
-          <p>
-            A marca acredita em marketing com direção, intenção e personalidade. O foco é desenvolver marcas fortes, com
-            comunicação autêntica e estratégias que gerem conexão, posicionamento e crescimento real.
+          <p class="section-label" data-i18n="positioning.label">Positioning</p>
+          <h2 id="positioning-title" data-i18n="positioning.title">A strategic, human and intelligent agency.</h2>
+          <p data-i18n="positioning.text">
+            The brand believes in marketing with direction, intention and personality. Its focus is to develop strong brands through authentic communication and strategies that generate connection, positioning and real growth.
           </p>
         </div>
       </section>
 
       <section class="section values" aria-labelledby="values-title">
         <div class="section__heading reveal">
-          <p class="section-label">Valores</p>
-          <h2 id="values-title">Valores que direcionam cada projeto</h2>
+          <p class="section-label" data-i18n="values.label">Values</p>
+          <h2 id="values-title" data-i18n="values.title">Values that guide every project</h2>
         </div>
         <div class="values__grid">
-          <div class="value value--large reveal">Estratégia antes da execução</div>
-          <div class="value reveal">Comunicação personalizada</div>
-          <div class="value reveal">Escuta e análise profunda</div>
-          <div class="value reveal">Criatividade com direção</div>
-          <div class="value reveal">Clareza estratégica</div>
-          <div class="value value--accent reveal">Inteligência de marca</div>
-          <div class="value reveal">Consistência</div>
-          <div class="value reveal">Comunicação humana</div>
-          <div class="value reveal">Crescimento sustentável</div>
-          <div class="value reveal">Acompanhamento contínuo</div>
+          <div class="value value--large reveal" data-i18n="values.item1">Strategy before execution</div>
+          <div class="value reveal" data-i18n="values.item2">Tailored communication</div>
+          <div class="value reveal" data-i18n="values.item3">Deep listening and analysis</div>
+          <div class="value reveal" data-i18n="values.item4">Creativity with direction</div>
+          <div class="value reveal" data-i18n="values.item5">Strategic clarity</div>
+          <div class="value value--accent reveal" data-i18n="values.item6">Brand intelligence</div>
+          <div class="value reveal" data-i18n="values.item7">Consistency</div>
+          <div class="value reveal" data-i18n="values.item8">Human communication</div>
+          <div class="value reveal" data-i18n="values.item9">Sustainable growth</div>
+          <div class="value reveal" data-i18n="values.item10">Continuous monitoring</div>
         </div>
       </section>
 
       <section class="voice" aria-labelledby="voice-title">
         <div class="voice__inner reveal">
-          <p class="section-label">Tom de voz</p>
-          <h2 id="voice-title">Autoridade sem arrogância. Estratégia com proximidade.</h2>
-          <p>
-            A comunicação da The Power Agency deve transmitir inteligência estratégica, clareza, criatividade, segurança,
-            sofisticação acessível e visão de crescimento.
+          <p class="section-label" data-i18n="voice.label">Tone of voice</p>
+          <h2 id="voice-title" data-i18n="voice.title">Authority without arrogance. Strategy with proximity.</h2>
+          <p data-i18n="voice.text">
+            The Power Agency's communication should convey strategic intelligence, clarity, creativity, confidence, accessible sophistication and a vision for growth.
           </p>
         </div>
       </section>
@@ -341,18 +382,16 @@
       <section class="final-cta" id="contato" aria-labelledby="cta-title">
         <div class="final-cta__pattern" aria-hidden="true"></div>
         <div class="final-cta__inner reveal">
-          <p class="section-label">Contato</p>
-          <h2 id="cta-title">Pronta para construir uma marca com estratégia?</h2>
-          <p>
-            Vamos transformar comunicação em direção, conteúdo em posicionamento e campanhas em crescimento real.
-          </p>
+          <p class="section-label" data-i18n="final.label">Contact</p>
+          <h2 id="cta-title" data-i18n="final.title">Ready to build a brand with strategy?</h2>
+          <p data-i18n="final.text">Let's turn communication into direction, content into positioning and campaigns into real growth.</p>
           <div class="final-cta__actions">
             <!-- TODO: inserir link oficial de contato da The Power Agency. -->
-            <a class="button button--light" href="#contato" aria-label="Fale com a The Power Agency">
-              Fale com a The Power Agency
+            <a class="button button--light" href="#contato" aria-label="Talk to The Power Agency" data-i18n-aria-label="final.primaryAria" data-i18n="final.primary">
+              Talk to The Power Agency
             </a>
-            <a class="button button--outline-light" href="#contato" aria-label="Solicitar diagnóstico estratégico">
-              Solicitar diagnóstico
+            <a class="button button--outline-light" href="#contato" aria-label="Request a strategic diagnosis" data-i18n-aria-label="final.secondaryAria" data-i18n="final.secondary">
+              Request a diagnosis
             </a>
           </div>
         </div>
@@ -360,8 +399,75 @@
     </main>
 
     <footer class="site-footer">
-      <img src="assets/brand-logo-dark.png" alt="The Power Agency" width="430" height="180" loading="lazy" />
-      <p>Marketing estratégico para marcas que crescem com direção.</p>
+      <div class="site-footer__main">
+        <div class="footer-brand">
+          <img src="assets/brand-logo-dark.png" alt="The Power Agency" width="430" height="180" loading="lazy" />
+          <p data-i18n="footer.tagline">Strategic marketing for brands that grow with direction.</p>
+        </div>
+
+        <nav class="footer-column footer-links" aria-label="Footer navigation" data-i18n-aria-label="footer.navigationAria">
+          <h2 data-i18n="footer.navigation">Navigation</h2>
+          <a href="#sobre" data-i18n="nav.about">About</a>
+          <a href="#servicos" data-i18n="nav.services">Services</a>
+          <a href="#metodo" data-i18n="nav.method">TPA Method</a>
+          <a href="#diferenciais" data-i18n="nav.differentials">Differentials</a>
+          <a href="#contato" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="footer-column footer-contact">
+          <h2 data-i18n="footer.contact">Contact</h2>
+          <!-- TODO: inserir e-mail oficial da The Power Agency. -->
+          <a href="mailto:hello@thepoweragency.com" aria-label="Send an email to The Power Agency" data-i18n-aria-label="footer.emailAria">
+            <span data-i18n="footer.email">Email</span>
+            <strong>hello@thepoweragency.com</strong>
+          </a>
+          <!-- TODO: inserir número oficial de WhatsApp da The Power Agency. -->
+          <a href="https://wa.me/10000000000" target="_blank" rel="noopener noreferrer" aria-label="Contact The Power Agency on WhatsApp" data-i18n-aria-label="footer.whatsappAria">
+            <span>WhatsApp</span>
+            <strong>+1 (000) 000-0000</strong>
+          </a>
+          <div class="footer-socials" aria-label="Social links" data-i18n-aria-label="footer.socialAria">
+            <!-- TODO: inserir Instagram oficial da The Power Agency. -->
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Open The Power Agency Instagram in a new tab" data-i18n-aria-label="footer.instagramAria">Instagram</a>
+            <!-- TODO: inserir LinkedIn oficial da The Power Agency. -->
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Open The Power Agency LinkedIn in a new tab" data-i18n-aria-label="footer.linkedinAria">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="footer-column footer-language">
+          <h2 data-i18n="footer.language">Language</h2>
+          <div class="language-switcher" role="group" aria-label="Language selector" data-i18n-aria-label="language.group">
+            <button
+              class="language-option is-active"
+              type="button"
+              aria-pressed="true"
+              aria-label="Switch language to English"
+              data-i18n-aria-label="language.enAria"
+              data-lang-switch="en"
+            >
+              🇺🇸 English
+            </button>
+            <button
+              class="language-option"
+              type="button"
+              aria-pressed="false"
+              aria-label="Mudar idioma para Português"
+              data-i18n-aria-label="language.ptAria"
+              data-lang-switch="pt-BR"
+            >
+              🇧🇷 Português
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p data-i18n="footer.copyright">© 2026 The Power Agency. All rights reserved.</p>
+        <p>
+          <span data-i18n="footer.developedBy">Developed by</span>
+          <a href="https://moralessolucoes.com.br/tecnologia" target="_blank" rel="noopener noreferrer">Morales Soluções</a>
+        </p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
