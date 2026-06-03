@@ -118,23 +118,102 @@
         </div>
       </section>
 
-      <section class="section section--intro" id="sobre" aria-labelledby="intro-title">
-        <div class="section__grid section__grid--intro">
-          <div class="reveal">
-            <p class="section-label" data-i18n="intro.label">More than content</p>
-            <h2 id="intro-title" data-i18n="intro.title">More than content. Strategy with intention.</h2>
+      <section class="section section--about-carousel" id="sobre" aria-label="Sobre a agência e fundadoras" data-i18n-aria-label="about.sectionLabel">
+        <div class="about-carousel reveal" data-about-carousel>
+          <div class="about-carousel__slides-container">
+            <div class="about-carousel__slides" id="about-carousel-slides" aria-live="polite">
+              <!-- Slide 1: The Power Agency -->
+              <div class="about-carousel__slide is-active" data-about-slide="0" role="group" aria-roledescription="slide" aria-label="Agency slide, 1 of 3" data-i18n-aria-label="about.agency.slideLabel">
+                <div class="about-carousel__grid">
+                  <div class="about-carousel__visual">
+                    <div class="about-carousel__brand-visual">
+                      <span class="about-carousel__brand-texture" aria-hidden="true"></span>
+                      <span class="about-carousel__brand-orbit about-carousel__brand-orbit--outer" aria-hidden="true"></span>
+                      <span class="about-carousel__brand-orbit about-carousel__brand-orbit--inner" aria-hidden="true"></span>
+                      <img class="about-carousel__monogram" src="assets/brand-monogram.png" alt="The Power Agency TPA monogram brand composition" data-i18n-alt="about.agency.alt" width="300" height="300" loading="lazy" />
+                      <div class="about-carousel__brand-tags" aria-hidden="true">
+                        <span>THINK</span>
+                        <span>PLAN</span>
+                        <span>ACTION</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="about-carousel__content">
+                    <p class="section-label" data-i18n="about.agency.label">ABOUT THE AGENCY</p>
+                    <h2 class="about-carousel__title" data-i18n="about.agency.title">Marketing strategy with direction, purpose and personality.</h2>
+                    <div class="about-carousel__text">
+                      <p data-i18n="about.agency.text1">The Power Agency combines analysis, planning and execution to help brands communicate with clarity, authenticity and intention.</p>
+                      <p data-i18n="about.agency.text2">Through strategic positioning, creative direction and content built around real connection, we transform ideas into brand experiences that grow with purpose.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Rafaela -->
+              <div class="about-carousel__slide" data-about-slide="1" role="group" aria-roledescription="slide" aria-label="Rafaela slide, 2 of 3" data-i18n-aria-label="about.rafaela.slideLabel" aria-hidden="true">
+                <div class="about-carousel__grid">
+                  <div class="about-carousel__visual">
+                    <img class="about-carousel__image" src="assets/founders/RAFAELA-TPA.jpg" alt="Portrait of Rafaela, creative mind behind The Power Agency" data-i18n-alt="about.rafaela.alt" loading="lazy" />
+                  </div>
+                  <div class="about-carousel__content">
+                    <p class="section-label" data-i18n="about.rafaela.label">CREATIVE MIND</p>
+                    <h2 class="about-carousel__title" data-i18n="about.rafaela.title">Rafaela, but you can call her Rafa.</h2>
+                    <div class="about-carousel__text">
+                      <p data-i18n="about.rafaela.text1">I’m Rafaela, but you can call me Rafa. I’m one of the creative minds behind The Power Agency.</p>
+                      <p data-i18n="about.rafaela.text2">For over five years, I’ve been helping brands and professionals communicate who they truly are through intentional positioning, meaningful storytelling, and content that creates real connection.</p>
+                      <p data-i18n="about.rafaela.text3">Outside of work, I’m passionate about the little things that make life lighter and more personal, like spending time with my five Spitz dogs or playing beach tennis, which has become my favorite sport lately.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Ana -->
+              <div class="about-carousel__slide" data-about-slide="2" role="group" aria-roledescription="slide" aria-label="Ana slide, 3 of 3" data-i18n-aria-label="about.ana.slideLabel" aria-hidden="true">
+                <div class="about-carousel__grid">
+                  <div class="about-carousel__visual">
+                    <img class="about-carousel__image" src="assets/founders/ANA-TPA.PNG" alt="Portrait of Ana, creative mind behind The Power Agency" data-i18n-alt="about.ana.alt" loading="lazy" />
+                  </div>
+                  <div class="about-carousel__content">
+                    <p class="section-label" data-i18n="about.ana.label">CREATIVE MIND</p>
+                    <h2 class="about-carousel__title" data-i18n="about.ana.title">Ana, strategy and creativity from Paris.</h2>
+                    <div class="about-carousel__text">
+                      <p data-i18n="about.ana.text1">Hi, I’m Ana, one of the creative minds behind The Power Agency.</p>
+                      <p data-i18n="about.ana.text2">I’m a Brazilian content creator and strategist currently living in Paris, passionate about building brands that people genuinely connect with. Between campaigns, creative direction, and strategy meetings, you’ll probably find me running through the streets of Paris, planning my next trip, or looking for inspiration in fashion, storytelling, and everyday life.</p>
+                      <p data-i18n="about.ana.text3">My journey in digital began long before the agency, as a content creator. I learned how to transform ideas into communities and brands into experiences. Today, I bring that same vision into every project we create at The Power Agency — combining strategy, creativity and authenticity to help brands grow with purpose and personality.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="intro-copy reveal">
-            <p data-i18n="intro.text">
-              Content without strategy creates shallow communication. That is why, before any post, campaign or publication, The Power Agency builds direction, intention and positioning.
-            </p>
-            <ul class="editorial-list" aria-label="Strategic differentials" data-i18n-aria-label="intro.listLabel">
-              <li data-i18n="intro.bullet.strategy">Strategy before execution</li>
-              <li data-i18n="intro.bullet.tailored">Tailored communication</li>
-              <li data-i18n="intro.bullet.analysis">Deep business analysis</li>
-              <li data-i18n="intro.bullet.creativity">Creativity with direction</li>
-              <li data-i18n="intro.bullet.tracking">Continuous performance tracking</li>
-            </ul>
+
+          <!-- Controls: arrows and indicators -->
+          <div class="about-carousel__controls">
+            <button class="about-carousel__arrow about-carousel__arrow--prev" type="button" aria-label="Slide anterior" data-i18n-aria-label="about.carousel.prev" data-about-carousel-prev>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+
+            <div class="about-carousel__indicators" role="tablist" aria-label="Slides do carrossel" data-i18n-aria-label="about.carousel.tablist" data-about-carousel-indicators>
+              <button class="about-carousel__indicator is-active" type="button" role="tab" aria-selected="true" aria-controls="about-carousel-slides" data-slide-to="0">
+                <span data-i18n="about.indicator.agency">Agency</span>
+              </button>
+              <button class="about-carousel__indicator" type="button" role="tab" aria-selected="false" aria-controls="about-carousel-slides" data-slide-to="1" tabindex="-1">
+                <span data-i18n="about.indicator.rafaela">Rafaela</span>
+              </button>
+              <button class="about-carousel__indicator" type="button" role="tab" aria-selected="false" aria-controls="about-carousel-slides" data-slide-to="2" tabindex="-1">
+                <span data-i18n="about.indicator.ana">Ana</span>
+              </button>
+            </div>
+
+            <button class="about-carousel__arrow about-carousel__arrow--next" type="button" aria-label="Próximo slide" data-i18n-aria-label="about.carousel.next" data-about-carousel-next>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
           </div>
         </div>
       </section>

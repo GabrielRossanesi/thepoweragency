@@ -181,6 +181,33 @@ const translations = {
     "language.group": "Language selector",
     "language.enAria": "Switch language to English",
     "language.ptAria": "Mudar idioma para Português",
+    "about.sectionLabel": "About the agency and founders",
+    "about.carousel.prev": "Previous slide",
+    "about.carousel.next": "Next slide",
+    "about.carousel.tablist": "About slides",
+    "about.indicator.agency": "Agency",
+    "about.indicator.rafaela": "Rafaela",
+    "about.indicator.ana": "Ana",
+    "about.agency.slideLabel": "Agency slide, 1 of 3",
+    "about.agency.label": "ABOUT THE AGENCY",
+    "about.agency.title": "Marketing strategy with direction, purpose and personality.",
+    "about.agency.alt": "The Power Agency TPA monogram brand composition",
+    "about.agency.text1": "The Power Agency combines analysis, planning and execution to help brands communicate with clarity, authenticity and intention.",
+    "about.agency.text2": "Through strategic positioning, creative direction and content built around real connection, we transform ideas into brand experiences that grow with purpose.",
+    "about.rafaela.slideLabel": "Rafaela slide, 2 of 3",
+    "about.rafaela.label": "CREATIVE MIND",
+    "about.rafaela.title": "Rafaela, but you can call her Rafa.",
+    "about.rafaela.alt": "Portrait of Rafaela, creative mind behind The Power Agency",
+    "about.rafaela.text1": "I’m Rafaela, but you can call me Rafa. I’m one of the creative minds behind The Power Agency.",
+    "about.rafaela.text2": "For over five years, I’ve been helping brands and professionals communicate who they truly are through intentional positioning, meaningful storytelling, and content that creates real connection.",
+    "about.rafaela.text3": "Outside of work, I’m passionate about the little things that make life lighter and more personal, like spending time with my five Spitz dogs or playing beach tennis, which has become my favorite sport lately.",
+    "about.ana.slideLabel": "Ana slide, 3 of 3",
+    "about.ana.label": "CREATIVE MIND",
+    "about.ana.title": "Ana, strategy and creativity from Paris.",
+    "about.ana.alt": "Portrait of Ana, creative mind behind The Power Agency",
+    "about.ana.text1": "Hi, I’m Ana, one of the creative minds behind The Power Agency.",
+    "about.ana.text2": "I’m a Brazilian content creator and strategist currently living in Paris, passionate about building brands that people genuinely connect with. Between campaigns, creative direction, and strategy meetings, you’ll probably find me running through the streets of Paris, planning my next trip, or looking for inspiration in fashion, storytelling, and everyday life.",
+    "about.ana.text3": "My journey in digital began long before the agency, as a content creator. I learned how to transform ideas into communities and brands into experiences. Today, I bring that same vision into every project we create at The Power Agency — combining strategy, creativity and authenticity to help brands grow with purpose and personality.",
   },
   "pt-BR": {
     "meta.title": "The Power Agency — Marketing estratégico para marcas em crescimento",
@@ -353,6 +380,33 @@ const translations = {
     "language.group": "Seletor de idioma",
     "language.enAria": "Switch language to English",
     "language.ptAria": "Mudar idioma para Português",
+    "about.sectionLabel": "Sobre a agência e fundadoras",
+    "about.carousel.prev": "Slide anterior",
+    "about.carousel.next": "Próximo slide",
+    "about.carousel.tablist": "Slides do Sobre",
+    "about.indicator.agency": "Agência",
+    "about.indicator.rafaela": "Rafaela",
+    "about.indicator.ana": "Ana",
+    "about.agency.slideLabel": "Slide da agência, 1 de 3",
+    "about.agency.label": "SOBRE A AGÊNCIA",
+    "about.agency.title": "Estratégia de marketing com direção, propósito e personalidade.",
+    "about.agency.alt": "Composição de marca com o monograma TPA da The Power Agency",
+    "about.agency.text1": "A The Power Agency une análise, planejamento e execução para ajudar marcas a se comunicarem com clareza, autenticidade e intenção.",
+    "about.agency.text2": "Por meio de posicionamento estratégico, direção criativa e conteúdos construídos para gerar conexão real, transformamos ideias em experiências de marca que crescem com propósito.",
+    "about.rafaela.slideLabel": "Slide da Rafaela, 2 de 3",
+    "about.rafaela.label": "MENTE CRIATIVA",
+    "about.rafaela.title": "Rafaela, mas pode chamar de Rafa.",
+    "about.rafaela.alt": "Retrato de Rafaela, mente criativa por trás da The Power Agency",
+    "about.rafaela.text1": "Sou Rafaela, mas você pode me chamar de Rafa. Sou uma das mentes criativas por trás da The Power Agency.",
+    "about.rafaela.text2": "Há mais de cinco anos, ajudo marcas e profissionais a comunicarem quem realmente são por meio de posicionamento intencional, storytelling significativo e conteúdos que geram conexão real.",
+    "about.rafaela.text3": "Fora do trabalho, sou apaixonada pelas pequenas coisas que deixam a vida mais leve e pessoal, como passar tempo com meus cinco cães da raça Spitz e jogar beach tennis, que se tornou meu esporte favorito ultimamente.",
+    "about.ana.slideLabel": "Slide da Ana, 3 de 3",
+    "about.ana.label": "MENTE CRIATIVA",
+    "about.ana.title": "Ana, estratégia e criatividade direto de Paris.",
+    "about.ana.alt": "Retrato de Ana, mente criativa por trás da The Power Agency",
+    "about.ana.text1": "Oi, eu sou a Ana, uma das mentes criativas por trás da The Power Agency.",
+    "about.ana.text2": "Sou criadora de conteúdo e estrategista brasileira, atualmente vivendo em Paris, apaixonada por construir marcas com as quais as pessoas realmente se conectam. Entre campanhas, direção criativa e reuniões de estratégia, você provavelmente vai me encontrar correndo pelas ruas de Paris, planejando minha próxima viagem ou buscando inspiração na moda, no storytelling e na vida cotidiana.",
+    "about.ana.text3": "Minha jornada no digital começou muito antes da agência, como criadora de conteúdo. Foi assim que aprendi a transformar ideias em comunidades e marcas em experiências. Hoje, levo essa mesma visão para cada projeto que criamos na The Power Agency, unindo estratégia, criatividade e autenticidade para ajudar marcas a crescerem com propósito e personalidade.",
   },
 };
 let previousFocus = null;
@@ -398,6 +452,10 @@ const applyLanguage = (language, shouldPersist = false) => {
 
   document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
     element.setAttribute("aria-label", translate(element.dataset.i18nAriaLabel));
+  });
+
+  document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+    element.setAttribute("alt", translate(element.dataset.i18nAlt));
   });
 
   languageButtons.forEach((button) => {
@@ -592,3 +650,195 @@ if ("IntersectionObserver" in window) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
+
+/* ==========================================================================
+   ABOUT CAROUSEL LOGIC
+   ========================================================================== */
+const initAboutCarousel = () => {
+  const slides = Array.from(document.querySelectorAll("[data-about-slide]"));
+  const indicators = Array.from(document.querySelectorAll("[data-about-carousel-indicators] button"));
+  const prevBtn = document.querySelector("[data-about-carousel-prev]");
+  const nextBtn = document.querySelector("[data-about-carousel-next]");
+  const carouselContainer = document.querySelector("[data-about-carousel]");
+  
+  if (!slides.length) return;
+  
+  let currentSlide = 0;
+  let autoplayTimer = null;
+  let resumeTimer = null;
+  let isHovering = false;
+  let hasFocusWithin = false;
+  const autoplayDelay = 9000;
+  const resumeDelay = 11000;
+
+  const canAutoplay = () => !reducedMotion && !isHovering && !hasFocusWithin && !document.hidden;
+  
+  const updateCarousel = (index) => {
+    if (index >= slides.length) {
+      currentSlide = 0;
+    } else if (index < 0) {
+      currentSlide = slides.length - 1;
+    } else {
+      currentSlide = index;
+    }
+    
+    slides.forEach((slide, idx) => {
+      const isActive = idx === currentSlide;
+      slide.classList.toggle("is-active", isActive);
+      if (isActive) {
+        slide.removeAttribute("aria-hidden");
+        slide.querySelectorAll("a, button, input").forEach((el) => el.removeAttribute("tabindex"));
+      } else {
+        slide.setAttribute("aria-hidden", "true");
+        slide.querySelectorAll("a, button, input").forEach((el) => el.setAttribute("tabindex", "-1"));
+      }
+    });
+    
+    indicators.forEach((indicator, idx) => {
+      const isActive = idx === currentSlide;
+      indicator.classList.toggle("is-active", isActive);
+      indicator.setAttribute("aria-selected", String(isActive));
+      indicator.setAttribute("tabindex", isActive ? "0" : "-1");
+    });
+  };
+  
+  const nextSlide = () => {
+    updateCarousel(currentSlide + 1);
+  };
+  
+  const prevSlide = () => {
+    updateCarousel(currentSlide - 1);
+  };
+  
+  const stopAutoplay = () => {
+    if (autoplayTimer) {
+      window.clearInterval(autoplayTimer);
+      autoplayTimer = null;
+    }
+
+    carouselContainer?.classList.remove("is-autoplaying");
+  };
+
+  const clearResumeTimer = () => {
+    if (resumeTimer) {
+      window.clearTimeout(resumeTimer);
+      resumeTimer = null;
+    }
+  };
+
+  const startAutoplay = () => {
+    clearResumeTimer();
+    stopAutoplay();
+
+    if (!canAutoplay()) return;
+
+    carouselContainer?.classList.add("is-autoplaying");
+    autoplayTimer = window.setInterval(nextSlide, autoplayDelay);
+  };
+
+  const scheduleAutoplayResume = (delay = resumeDelay) => {
+    clearResumeTimer();
+
+    if (reducedMotion) return;
+
+    resumeTimer = window.setTimeout(() => {
+      if (canAutoplay()) {
+        startAutoplay();
+      }
+    }, delay);
+  };
+  
+  const handleManualInteraction = () => {
+    stopAutoplay();
+    scheduleAutoplayResume();
+  };
+  
+  prevBtn?.addEventListener("click", () => {
+    prevSlide();
+    handleManualInteraction();
+  });
+  
+  nextBtn?.addEventListener("click", () => {
+    nextSlide();
+    handleManualInteraction();
+  });
+  
+  indicators.forEach((indicator, idx) => {
+    indicator.addEventListener("click", () => {
+      updateCarousel(idx);
+      handleManualInteraction();
+    });
+    
+    indicator.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+        e.preventDefault();
+        const nextIdx = (idx + 1) % indicators.length;
+        indicators[nextIdx].focus();
+        updateCarousel(nextIdx);
+        handleManualInteraction();
+      } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        e.preventDefault();
+        const prevIdx = (idx - 1 + indicators.length) % indicators.length;
+        indicators[prevIdx].focus();
+        updateCarousel(prevIdx);
+        handleManualInteraction();
+      }
+    });
+  });
+  
+  if (carouselContainer) {
+    carouselContainer.addEventListener("mouseenter", () => {
+      isHovering = true;
+      clearResumeTimer();
+      stopAutoplay();
+    });
+
+    carouselContainer.addEventListener("mouseleave", () => {
+      isHovering = false;
+      scheduleAutoplayResume(1400);
+    });
+
+    carouselContainer.addEventListener("focusin", () => {
+      hasFocusWithin = true;
+      clearResumeTimer();
+      stopAutoplay();
+    });
+
+    carouselContainer.addEventListener("focusout", () => {
+      window.requestAnimationFrame(() => {
+        if (!carouselContainer.contains(document.activeElement)) {
+          hasFocusWithin = false;
+          scheduleAutoplayResume(5000);
+        }
+      });
+    });
+
+    carouselContainer.addEventListener("touchstart", () => {
+      stopAutoplay();
+      scheduleAutoplayResume();
+    }, { passive: true });
+
+    carouselContainer.addEventListener("pointerdown", (event) => {
+      if (event.pointerType !== "mouse") {
+        stopAutoplay();
+        scheduleAutoplayResume();
+      }
+    });
+  }
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      clearResumeTimer();
+      stopAutoplay();
+    } else {
+      scheduleAutoplayResume(1200);
+    }
+  });
+  
+  // Set initial state
+  updateCarousel(0);
+  startAutoplay();
+};
+
+// Initialize the About carousel on load
+initAboutCarousel();
