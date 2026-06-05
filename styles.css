@@ -3039,3 +3039,8 @@ ul {
     font-size: 0.9rem;
   }
 }
+
+.about-carousel__slide:is([data-about-slide="1"], [data-about-slide="2"]) .about-carousel__title {
+  margin-bottom: clamp(10px, 1.4vw, 18px);
+  padding-bottom: clamp(3px, 1vw, 18px);
+}
