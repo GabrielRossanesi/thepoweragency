@@ -1066,22 +1066,14 @@ ul {
 }
 
 .method-step--action {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   border-color: rgba(var(--rose-rgb), 0.58);
   background: rgba(var(--rose-rgb), 0.12);
-  padding-block: clamp(64px, 6vw, 96px);
 }
 
 .method-step--action:hover,
 .method-step--action.is-active {
   border-color: var(--rose-soft);
   background: rgba(var(--rose-rgb), 0.18);
-}
-
-.method-step--action .method-step__index {
-  margin: 0 0 32px;
 }
 
 .method-step--action h3 {
@@ -2504,10 +2496,6 @@ ul {
 
   .method-step {
     padding: 24px;
-  }
-
-  .method-step--action {
-    padding: 28px 24px 42px;
   }
 
   .method-step::before {
