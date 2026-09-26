@@ -17,10 +17,10 @@ const translations = {
     "skip.content": "Skip to content",
     "nav.main": "Main navigation",
     "nav.mobile": "Mobile navigation",
-    "nav.about": "About",
-    "nav.services": "Services",
+    "nav.about": "Founders",
+    "nav.services": "Expertise",
     "nav.method": "TPA Method",
-    "nav.differentials": "Differentials",
+    "nav.boutique": "Why boutique?",
     "nav.contact": "Contact",
     "cta.header": "Talk to the agency",
     "cta.mobile": "Start a strategy",
@@ -50,30 +50,23 @@ const translations = {
     "intro.bullet.analysis": "Deep business analysis",
     "intro.bullet.creativity": "Creativity with direction",
     "intro.bullet.tracking": "Continuous performance tracking",
-    "services.label": "Complete solutions",
-    "services.title": "Complete solutions for brands in motion",
-    "services.text":
-      "From strategic planning to execution, The Power Agency develops communication systems designed to strengthen positioning, generate connection and support sustainable growth.",
-    "services.strategy.title": "Strategy",
-    "services.strategy.item1": "Content strategy",
-    "services.strategy.item2": "Strategic communication planning",
-    "services.strategy.item3": "Brand positioning",
-    "services.strategy.item4": "Content funnel planning",
-    "services.content.title": "Content",
-    "services.content.item1": "Campaign development",
-    "services.content.item2": "Content production",
-    "services.content.item3": "Social media management",
-    "services.content.item4": "Content publishing and management",
-    "services.performance.title": "Performance",
-    "services.performance.item1": "Paid traffic",
-    "services.performance.item2": "Performance analysis",
-    "services.performance.item3": "Metrics and results tracking",
-    "services.performance.item4": "Campaign optimization",
-    "services.direction.title": "Direction",
-    "services.direction.item1": "Continuous strategic guidance",
-    "services.direction.item2": "Seasonal campaigns",
-    "services.direction.item3": "Creative direction",
-    "services.direction.item4": "Communication formats",
+    "services.label": "Expertise",
+    "services.title": "Strategic expertise for every stage of brand communication.",
+    "services.strategy.title": "Brand Strategy & Positioning",
+    "services.strategy.text": "Positioning, audience intelligence, brand personality, communication strategy.",
+    "services.content.title": "Content & Creative Direction",
+    "services.content.text": "Content systems, storytelling, campaigns, visual and creative direction.",
+    "services.performance.title": "Growth & Performance",
+    "services.performance.text": "Paid media, performance insights, funnel thinking and campaign optimization.",
+    "services.direction.title": "Strategic Partnership",
+    "services.direction.text": "Ongoing direction, monthly strategic meetings, seasonal opportunities and continuous refinement.",
+    "partnership.label": "Partnership model",
+    "partnership.title": "Direction that stays with you.",
+    "partnership.detailsLabel": "How the partnership works",
+    "partnership.text": "We work alongside the business through ongoing strategic direction.",
+    "partnership.item1": "Monthly strategic meetings",
+    "partnership.item2": "Seasonal opportunities",
+    "partnership.item3": "Continuous refinement",
     "method.label": "Proprietary methodology",
     "method.title": "TPA — Think, Plan and Action",
     "method.subtitle": "A proprietary methodology designed to turn communication into strategy.",
@@ -94,7 +87,7 @@ const translations = {
     "method.plan.index": "PLAN",
     "method.plan.title": "Building the strategic path",
     "method.plan.text":
-      "After the analysis, the agency develops a clear execution plan designed to take the brand from where it is to where it wants to go.",
+      "We translate insights into a clear communication system by defining what the brand should say, how it should show up, which narratives it should own and how campaigns connect to business goals.",
     "method.plan.item1": "Content strategies",
     "method.plan.item2": "Campaigns",
     "method.plan.item3": "Timelines",
@@ -103,17 +96,9 @@ const translations = {
     "method.plan.item6": "Growth strategies",
     "method.plan.item7": "Execution planning",
     "method.action.index": "ACTION",
-    "method.action.title": "Execution with continuous monitoring",
+    "method.action.title": "Strategy that stays involved.",
     "method.action.text":
-      "Once the strategic structure is defined, the plan comes to life through production, publishing, campaigns, management and performance analysis.",
-    "method.action.item1": "Content production",
-    "method.action.item2": "Publishing",
-    "method.action.item3": "Campaigns",
-    "method.action.item4": "Social media management",
-    "method.action.item5": "Results tracking",
-    "method.action.item6": "Monthly meetings",
-    "method.action.item7": "Strategic improvements",
-    "method.action.item8": "Seasonal actions",
+      "Strategy only matters when it survives the real world. That’s why we remain involved in content, campaigns, performance and ongoing decisions. We learn from the market and refine the direction continuously.",
     "difference.label": "Differentials",
     "difference.title": "Strategy, intention and depth before every publication.",
     "difference.text":
@@ -142,22 +127,32 @@ const translations = {
     "positioning.title": "A strategic, human and intelligent agency.",
     "positioning.text":
       "The brand believes in marketing with direction, intention and personality. Its focus is to develop strong brands through authentic communication and strategies that generate connection, positioning and real growth.",
-    "values.label": "Values",
-    "values.title": "Values that guide every project",
-    "values.item1": "Strategy before execution",
-    "values.item2": "Tailored communication",
-    "values.item3": "Deep listening and analysis",
-    "values.item4": "Creativity with direction",
-    "values.item5": "Strategic clarity",
-    "values.item6": "Brand intelligence",
-    "values.item7": "Consistency",
-    "values.item8": "Human communication",
-    "values.item9": "Sustainable growth",
-    "values.item10": "Continuous monitoring",
-    "voice.label": "Tone of voice",
-    "voice.title": "Authority without arrogance. Strategy with proximity.",
-    "voice.text":
-      "The Power Agency's communication should convey strategic intelligence, clarity, creativity, confidence, accessible sophistication and a vision for growth.",
+    "fit.label": "Not for everyone",
+    "fit.title": "The right fit matters.",
+    "fit.intro1": "We do our best work with brands that see marketing as part of the business and not just as a content calendar.",
+    "fit.intro2": "The Power Agency is built for companies that value strategy, positioning and creative direction as much as visibility.",
+    "fit.listTitle": "We work best with brands that:",
+    "fit.item1": "want strategic involvement, not just execution;",
+    "fit.item2": "are open to direction, refinement and new perspectives;",
+    "fit.item3": "value consistency over isolated actions;",
+    "fit.item4": "understand that strong communication starts with clear positioning;",
+    "fit.item5": "want a close, ongoing relationship with the people thinking about their brand.",
+    "fit.closing": "If you’re looking for a partner who can think with you, challenge ideas when needed and turn strategy into consistent action, we may be the right fit.",
+    "agency.label": "About the agency",
+    "agency.title": "A boutique agency built on strategy, creativity and close collaboration.",
+    "agency.text1": "The Power Agency combines strategic thinking, creative direction and execution to build brands with clarity, relevance and intention.",
+    "agency.text2": "We work closely with a select number of clients, creating tailored strategies rather than replicating formulas.",
+    "agency.text3": "Every project is shaped around the business, the audience and the moment of the brand.",
+    "boutique.label": "The boutique difference",
+    "boutique.title": "Boutique by choice.",
+    "boutique.selective.title": "Limited client portfolio",
+    "boutique.selective.text": "We intentionally work with a limited number of brands so each partnership receives real attention, context and strategy depth.",
+    "boutique.senior.title": "Founder-led strategy",
+    "boutique.senior.text": "Strategy stays close to the people leading the agency. The thinking is not passed through layers before reaching execution.",
+    "boutique.tailored.title": "Tailored communication systems",
+    "boutique.tailored.text": "Every strategy is built around the brand, its audience, its market and its current moment. No generic frameworks applied the same way to everyone.",
+    "boutique.closer.title": "Continuous strategic involvement",
+    "boutique.closer.text": "We stay involved beyond the planning stage, following the execution, reading the response and refining the direction over time.",
     "final.label": "Contact",
     "final.title": "Ready to build a brand with strategy?",
     "final.text":
@@ -166,6 +161,33 @@ const translations = {
     "final.secondary": "Request a diagnosis",
     "final.primaryAria": "Talk to The Power Agency",
     "final.secondaryAria": "Request a strategic diagnosis",
+    "application.heading": "Tell us about your brand",
+    "application.name": "Name",
+    "application.namePlaceholder": "Your name",
+    "application.whatsapp": "WhatsApp",
+    "application.whatsappPlaceholder": "+55 (00) 00000-0000",
+    "application.company": "Company name",
+    "application.companyPlaceholder": "Your company name",
+    "application.industry": "Industry",
+    "application.industryPlaceholder": "E.g. healthcare, retail, industry...",
+    "application.instagram": "Instagram link",
+    "application.instagramPlaceholder": "https://instagram.com/yourcompany",
+    "application.website": "Website link",
+    "application.websitePlaceholder": "https://yourcompany.com",
+    "application.revenue": "Average monthly revenue",
+    "application.revenue1": "R$ 70,000 to R$ 100,000",
+    "application.revenue2": "R$ 100,000 to R$ 200,000",
+    "application.revenue3": "R$ 200,000 to R$ 300,000",
+    "application.revenue4": "Above R$ 300,000",
+    "application.paid": "Do you invest in paid media?",
+    "application.paidGoogle": "Yes, Google only",
+    "application.paidMeta": "Yes, Meta only",
+    "application.paidBoth": "Yes, Google and Meta",
+    "application.paidNone": "I don't invest",
+    "application.submit": "Send application",
+    "application.note": "Your answers will open as a WhatsApp message for you to review and send.",
+    "application.messageTitle": "New application — The Power Agency",
+    "application.invalidPhone": "Enter a WhatsApp number with 10 to 15 digits.",
     "footer.tagline": "Strategic marketing for brands that grow with direction.",
     "footer.navigation": "Navigation",
     "footer.navigationAria": "Footer navigation",
@@ -181,33 +203,27 @@ const translations = {
     "language.group": "Language selector",
     "language.enAria": "Switch language to English",
     "language.ptAria": "Mudar idioma para Português",
-    "about.sectionLabel": "About the agency and founders",
-    "about.carousel.prev": "Previous slide",
-    "about.carousel.next": "Next slide",
-    "about.carousel.tablist": "About slides",
-    "about.indicator.agency": "Agency",
-    "about.indicator.rafaela": "Rafaela",
-    "about.indicator.ana": "Ana",
-    "about.agency.slideLabel": "Agency slide, 1 of 3",
-    "about.agency.label": "ABOUT THE AGENCY",
-    "about.agency.title": "Marketing strategy with direction, purpose and personality.",
-    "about.agency.alt": "The Power Agency TPA monogram brand composition",
-    "about.agency.text1": "The Power Agency combines analysis, planning and execution to help brands communicate with clarity, authenticity and intention.",
-    "about.agency.text2": "Through strategic positioning, creative direction and content built around real connection, we transform ideas into brand experiences that grow with purpose.",
-    "about.rafaela.slideLabel": "Rafaela slide, 2 of 3",
-    "about.rafaela.label": "CREATIVE MIND",
+    "founders.label": "Meet the founders",
+    "founders.title": "Two minds. One direction.",
+    "founders.lead": "The Power Agency is led by Rafaela and Ana, two different perspectives brought together by more than a decade of friendship, trust and shared ambition.",
+    "founders.contrast": "Rafaela brings the strategic mind and Ana brings the creative lens.",
+    "founders.story1": "That combination shapes the way we work at The Power Agency, because strategy and creativity are never treated as separate disciplines. Every idea needs direction. Every strategy needs a way to come alive.",
+    "founders.story2": "And because we have worked, thought and built alongside each other for years, our clients don’t get disconnected departments or layers of communication.",
+    "founders.closing": "They get two complementary minds thinking closely about the same brand. Different strengths, the same standard.",
+    "founders.profileLabel": "The founders",
     "about.rafaela.title": "Rafaela",
-    "about.rafaela.alt": "Portrait of Rafaela, creative mind behind The Power Agency",
-    "about.rafaela.text1": "I’m Rafaela, but you can call me Rafa. I’m one of the creative minds behind The Power Agency.",
+    "about.rafaela.alt": "Portrait of Rafaela, co-founder of The Power Agency",
+    "about.rafaela.role": "Strategy & Brand Direction",
+    "about.rafaela.text1": "I’m Rafaela, but you can call me Rafa. I’m one of the creative minds behind The Power Agency. I lead the strategic side by connecting business vision, positioning and communication to build clearer, stronger brands.",
     "about.rafaela.text2": "For over five years, I’ve been helping brands and professionals communicate who they truly are through intentional positioning, meaningful storytelling, and content that creates real connection.",
     "about.rafaela.text3": "Outside of work, I’m passionate about the little things that make life lighter and more personal, like spending time with my five Spitz dogs or playing beach tennis, which has become my favorite sport lately.",
-    "about.ana.slideLabel": "Ana slide, 3 of 3",
-    "about.ana.label": "CREATIVE MIND",
     "about.ana.title": "Ana",
-    "about.ana.alt": "Portrait of Ana, creative mind behind The Power Agency",
-    "about.ana.text1": "Hi, I’m Ana, one of the creative minds behind The Power Agency.",
-    "about.ana.text2": "I’m a Brazilian content creator and strategist currently living in Paris, passionate about building brands that people genuinely connect with. Between campaigns, creative direction, and strategy meetings, you’ll probably find me running through the streets of Paris, planning my next trip, or looking for inspiration in fashion, storytelling, and everyday life.",
-    "about.ana.text3": "My journey in digital began long before the agency, as a content creator. I learned how to transform ideas into communities and brands into experiences. Today, I bring that same vision into every project we create at The Power Agency — combining strategy, creativity and authenticity to help brands grow with purpose and personality.",
+    "about.ana.alt": "Portrait of Ana, co-founder of The Power Agency",
+    "about.ana.role": "Creative & Content Direction",
+    "about.ana.text1": "Hi, I’m Ana! I lead the creative and content side of The Power Agency, combining cultural research, social media behavior and creative thinking to turn strategy into relevant communication.",
+    "about.ana.text2": "I’m a Brazilian content creator and social media currently living in Paris, passionate about building brands that people genuinely connect with.",
+    "about.ana.text3": "Between campaigns, creative direction, and strategy meetings, you’ll probably find me running through the streets of Paris, planning my next trip, or looking for inspiration in fashion, storytelling, and everyday life.",
+    "about.ana.text4": "My journey in digital began long before the agency, as a content creator. I learned how to transform ideas into communities and brands into experiences. Today, I bring that same vision into every project we create at The Power Agency combining strategy, creativity and authenticity to help brands grow with purpose and personality.",
   },
   "pt-BR": {
     "meta.title": "The Power Agency — Marketing estratégico para marcas em crescimento",
@@ -216,10 +232,10 @@ const translations = {
     "skip.content": "Ir para o conteúdo",
     "nav.main": "Navegação principal",
     "nav.mobile": "Navegação mobile",
-    "nav.about": "Sobre",
-    "nav.services": "Serviços",
+    "nav.about": "Fundadoras",
+    "nav.services": "Expertise",
     "nav.method": "Método TPA",
-    "nav.differentials": "Diferenciais",
+    "nav.boutique": "Por que boutique?",
     "nav.contact": "Contato",
     "cta.header": "Fale com a agência",
     "cta.mobile": "Começar uma estratégia",
@@ -249,30 +265,23 @@ const translations = {
     "intro.bullet.analysis": "Análise profunda do negócio",
     "intro.bullet.creativity": "Criatividade com direção",
     "intro.bullet.tracking": "Acompanhamento contínuo de performance",
-    "services.label": "Soluções completas",
-    "services.title": "Soluções completas para marcas em movimento",
-    "services.text":
-      "Do planejamento estratégico à execução, a The Power Agency desenvolve sistemas de comunicação criados para fortalecer posicionamento, gerar conexão e sustentar crescimento.",
-    "services.strategy.title": "Estratégia",
-    "services.strategy.item1": "Estratégia de conteúdo",
-    "services.strategy.item2": "Planejamento estratégico de comunicação",
-    "services.strategy.item3": "Posicionamento de marca",
-    "services.strategy.item4": "Planejamento de funil de conteúdo",
-    "services.content.title": "Conteúdo",
-    "services.content.item1": "Desenvolvimento de campanhas",
-    "services.content.item2": "Produção de conteúdo",
-    "services.content.item3": "Gestão de redes sociais",
-    "services.content.item4": "Gerenciamento e publicação de conteúdos",
-    "services.performance.title": "Performance",
-    "services.performance.item1": "Tráfego pago",
-    "services.performance.item2": "Análise de performance",
-    "services.performance.item3": "Acompanhamento de métricas e resultados",
-    "services.performance.item4": "Otimização de campanhas",
-    "services.direction.title": "Direção",
-    "services.direction.item1": "Direcionamento estratégico contínuo",
-    "services.direction.item2": "Campanhas sazonais",
-    "services.direction.item3": "Direção criativa",
-    "services.direction.item4": "Formatos de comunicação",
+    "services.label": "Expertise",
+    "services.title": "Expertise estratégica para cada etapa da comunicação da marca.",
+    "services.strategy.title": "Estratégia e posicionamento de marca",
+    "services.strategy.text": "Posicionamento, inteligência de público, personalidade da marca e estratégia de comunicação.",
+    "services.content.title": "Conteúdo e direção criativa",
+    "services.content.text": "Sistemas de conteúdo, storytelling, campanhas e direção visual e criativa.",
+    "services.performance.title": "Crescimento e performance",
+    "services.performance.text": "Mídia paga, análise de performance, visão de funil e otimização de campanhas.",
+    "services.direction.title": "Parceria estratégica",
+    "services.direction.text": "Direção contínua, reuniões estratégicas mensais, oportunidades sazonais e aprimoramento constante.",
+    "partnership.label": "Modelo de parceria",
+    "partnership.title": "Direção que acompanha você.",
+    "partnership.detailsLabel": "Como funciona a parceria",
+    "partnership.text": "Trabalhamos ao lado do negócio com direcionamento estratégico contínuo.",
+    "partnership.item1": "Reuniões estratégicas mensais",
+    "partnership.item2": "Oportunidades sazonais",
+    "partnership.item3": "Aprimoramento contínuo",
     "method.label": "Metodologia proprietária",
     "method.title": "TPA — Think, Plan and Action",
     "method.subtitle": "Uma metodologia proprietária para transformar comunicação em estratégia.",
@@ -293,7 +302,7 @@ const translations = {
     "method.plan.index": "PLAN",
     "method.plan.title": "Construção estratégica do caminho",
     "method.plan.text":
-      "Depois da análise, a agência desenvolve um plano de execução claro para levar a marca de onde está para onde deseja chegar.",
+      "Traduzimos os aprendizados em um sistema de comunicação claro, definindo o que a marca deve dizer, como deve se apresentar, quais narrativas deve assumir e como as campanhas se conectam aos objetivos do negócio.",
     "method.plan.item1": "Estratégias de conteúdo",
     "method.plan.item2": "Campanhas",
     "method.plan.item3": "Cronogramas",
@@ -302,17 +311,9 @@ const translations = {
     "method.plan.item6": "Estratégias de crescimento",
     "method.plan.item7": "Planejamento de execução",
     "method.action.index": "ACTION",
-    "method.action.title": "Execução com acompanhamento contínuo",
+    "method.action.title": "Estratégia com presença contínua.",
     "method.action.text":
-      "Com a estrutura estratégica definida, o plano ganha vida por meio de produção, publicação, campanhas, gestão e análise de performance.",
-    "method.action.item1": "Produção de conteúdo",
-    "method.action.item2": "Publicações",
-    "method.action.item3": "Campanhas",
-    "method.action.item4": "Gestão de redes sociais",
-    "method.action.item5": "Acompanhamento de resultados",
-    "method.action.item6": "Reuniões mensais",
-    "method.action.item7": "Aprimoramentos estratégicos",
-    "method.action.item8": "Ações sazonais",
+      "A estratégia só importa quando funciona no mundo real. Por isso, seguimos envolvidos no conteúdo, nas campanhas, na performance e nas decisões do dia a dia. Aprendemos com o mercado e refinamos a direção continuamente.",
     "difference.label": "Diferenciais",
     "difference.title": "Estratégia, intenção e profundidade antes de qualquer publicação.",
     "difference.text":
@@ -341,22 +342,32 @@ const translations = {
     "positioning.title": "Uma agência estratégica, humana e inteligente.",
     "positioning.text":
       "A marca acredita em marketing com direção, intenção e personalidade. O foco é desenvolver marcas fortes por meio de comunicação autêntica e estratégias que geram conexão, posicionamento e crescimento real.",
-    "values.label": "Valores",
-    "values.title": "Valores que direcionam cada projeto",
-    "values.item1": "Estratégia antes da execução",
-    "values.item2": "Comunicação personalizada",
-    "values.item3": "Escuta e análise profunda",
-    "values.item4": "Criatividade com direção",
-    "values.item5": "Clareza estratégica",
-    "values.item6": "Inteligência de marca",
-    "values.item7": "Consistência",
-    "values.item8": "Comunicação humana",
-    "values.item9": "Crescimento sustentável",
-    "values.item10": "Acompanhamento contínuo",
-    "voice.label": "Tom de voz",
-    "voice.title": "Autoridade sem arrogância. Estratégia com proximidade.",
-    "voice.text":
-      "A comunicação da The Power Agency deve transmitir inteligência estratégica, clareza, criatividade, segurança, sofisticação acessível e visão de crescimento.",
+    "fit.label": "Não é para todos",
+    "fit.title": "A conexão certa importa.",
+    "fit.intro1": "Fazemos nosso melhor trabalho com marcas que veem o marketing como parte do negócio, e não apenas como um calendário de conteúdo.",
+    "fit.intro2": "A The Power Agency foi criada para empresas que valorizam estratégia, posicionamento e direção criativa tanto quanto visibilidade.",
+    "fit.listTitle": "Trabalhamos melhor com marcas que:",
+    "fit.item1": "querem envolvimento estratégico, não apenas execução;",
+    "fit.item2": "estão abertas a direcionamento, refinamento e novas perspectivas;",
+    "fit.item3": "valorizam consistência mais do que ações isoladas;",
+    "fit.item4": "entendem que uma comunicação forte começa com um posicionamento claro;",
+    "fit.item5": "querem uma relação próxima e contínua com quem pensa na sua marca.",
+    "fit.closing": "Se você procura uma parceria que pense junto, questione ideias quando necessário e transforme estratégia em ação consistente, talvez sejamos a escolha certa.",
+    "agency.label": "Sobre a agência",
+    "agency.title": "Uma agência boutique construída com estratégia, criatividade e colaboração próxima.",
+    "agency.text1": "A The Power Agency une pensamento estratégico, direção criativa e execução para construir marcas com clareza, relevância e intenção.",
+    "agency.text2": "Trabalhamos de perto com um número seleto de clientes, criando estratégias sob medida em vez de repetir fórmulas.",
+    "agency.text3": "Cada projeto é moldado pelo negócio, pelo público e pelo momento da marca.",
+    "boutique.label": "O diferencial boutique",
+    "boutique.title": "Boutique por escolha.",
+    "boutique.selective.title": "Portfólio limitado de clientes",
+    "boutique.selective.text": "Trabalhamos intencionalmente com um número limitado de marcas para que cada parceria receba atenção real, contexto e profundidade estratégica.",
+    "boutique.senior.title": "Estratégia liderada pelas fundadoras",
+    "boutique.senior.text": "A estratégia permanece próxima de quem lidera a agência. As ideias não passam por camadas de comunicação antes de chegar à execução.",
+    "boutique.tailored.title": "Sistemas de comunicação sob medida",
+    "boutique.tailored.text": "Cada estratégia é construída em torno da marca, do público, do mercado e do momento atual. Sem aplicar as mesmas fórmulas genéricas a todos.",
+    "boutique.closer.title": "Envolvimento estratégico contínuo",
+    "boutique.closer.text": "Seguimos envolvidas além do planejamento, acompanhando a execução, observando a resposta do mercado e refinando a direção ao longo do tempo.",
     "final.label": "Contato",
     "final.title": "Pronta para construir uma marca com estratégia?",
     "final.text":
@@ -365,6 +376,33 @@ const translations = {
     "final.secondary": "Solicitar diagnóstico",
     "final.primaryAria": "Fale com a The Power Agency",
     "final.secondaryAria": "Solicitar diagnóstico estratégico",
+    "application.heading": "Conte sobre a sua marca",
+    "application.name": "Nome",
+    "application.namePlaceholder": "Digite seu nome",
+    "application.whatsapp": "WhatsApp",
+    "application.whatsappPlaceholder": "(00) 00000-0000",
+    "application.company": "Nome da empresa",
+    "application.companyPlaceholder": "Digite o nome da empresa",
+    "application.industry": "Ramo de atuação",
+    "application.industryPlaceholder": "Ex.: Indústria, saúde, varejo...",
+    "application.instagram": "Link do Instagram",
+    "application.instagramPlaceholder": "https://instagram.com/suaempresa",
+    "application.website": "Link do site",
+    "application.websitePlaceholder": "https://suaempresa.com.br",
+    "application.revenue": "Média de faturamento mensal",
+    "application.revenue1": "R$ 70.000 a R$ 100.000",
+    "application.revenue2": "R$ 100.000 a R$ 200.000",
+    "application.revenue3": "R$ 200.000 a R$ 300.000",
+    "application.revenue4": "Acima de R$ 300.000",
+    "application.paid": "Investe em tráfego pago?",
+    "application.paidGoogle": "Sim, apenas Google",
+    "application.paidMeta": "Sim, apenas Meta",
+    "application.paidBoth": "Sim, Google e Meta",
+    "application.paidNone": "Não invisto",
+    "application.submit": "Enviar aplicação",
+    "application.note": "Suas respostas serão abertas em uma mensagem no WhatsApp para você revisar e enviar.",
+    "application.messageTitle": "Nova aplicação — The Power Agency",
+    "application.invalidPhone": "Digite um número de WhatsApp com 10 a 15 dígitos.",
     "footer.tagline": "Marketing estratégico para marcas que crescem com direção.",
     "footer.navigation": "Navegação",
     "footer.navigationAria": "Navegação do rodapé",
@@ -380,33 +418,27 @@ const translations = {
     "language.group": "Seletor de idioma",
     "language.enAria": "Switch language to English",
     "language.ptAria": "Mudar idioma para Português",
-    "about.sectionLabel": "Sobre a agência e fundadoras",
-    "about.carousel.prev": "Slide anterior",
-    "about.carousel.next": "Próximo slide",
-    "about.carousel.tablist": "Slides do Sobre",
-    "about.indicator.agency": "Agência",
-    "about.indicator.rafaela": "Rafaela",
-    "about.indicator.ana": "Ana",
-    "about.agency.slideLabel": "Slide da agência, 1 de 3",
-    "about.agency.label": "SOBRE A AGÊNCIA",
-    "about.agency.title": "Estratégia de marketing com direção, propósito e personalidade.",
-    "about.agency.alt": "Composição de marca com o monograma TPA da The Power Agency",
-    "about.agency.text1": "A The Power Agency une análise, planejamento e execução para ajudar marcas a se comunicarem com clareza, autenticidade e intenção.",
-    "about.agency.text2": "Por meio de posicionamento estratégico, direção criativa e conteúdos construídos para gerar conexão real, transformamos ideias em experiências de marca que crescem com propósito.",
-    "about.rafaela.slideLabel": "Slide da Rafaela, 2 de 3",
-    "about.rafaela.label": "MENTE CRIATIVA",
+    "founders.label": "Conheça as fundadoras",
+    "founders.title": "Duas mentes. Uma direção.",
+    "founders.lead": "A The Power Agency é liderada por Rafaela e Ana, duas perspectivas diferentes unidas por mais de uma década de amizade, confiança e ambição compartilhada.",
+    "founders.contrast": "Rafaela traz a visão estratégica e Ana, o olhar criativo.",
+    "founders.story1": "Essa combinação molda nossa forma de trabalhar na The Power Agency, porque estratégia e criatividade nunca são tratadas como disciplinas separadas. Toda ideia precisa de direção. Toda estratégia precisa ganhar vida.",
+    "founders.story2": "E, como trabalhamos, pensamos e construímos juntas há anos, nossos clientes não encontram departamentos desconectados nem camadas de comunicação.",
+    "founders.closing": "Encontram duas mentes complementares pensando de perto sobre a mesma marca. Forças diferentes, o mesmo padrão.",
+    "founders.profileLabel": "As fundadoras",
     "about.rafaela.title": "Rafaela",
-    "about.rafaela.alt": "Retrato de Rafaela, mente criativa por trás da The Power Agency",
-    "about.rafaela.text1": "Sou Rafaela, mas você pode me chamar de Rafa. Sou uma das mentes criativas por trás da The Power Agency.",
+    "about.rafaela.alt": "Retrato de Rafaela, cofundadora da The Power Agency",
+    "about.rafaela.role": "Estratégia e direção de marca",
+    "about.rafaela.text1": "Sou Rafaela, mas você pode me chamar de Rafa. Sou uma das mentes criativas por trás da The Power Agency. Lidero o lado estratégico ao conectar visão de negócio, posicionamento e comunicação para construir marcas mais claras e fortes.",
     "about.rafaela.text2": "Há mais de cinco anos, ajudo marcas e profissionais a comunicarem quem realmente são por meio de posicionamento intencional, storytelling significativo e conteúdos que geram conexão real.",
-    "about.rafaela.text3": "Fora do trabalho, sou apaixonada pelas pequenas coisas que deixam a vida mais leve e pessoal, como passar tempo com meus cinco cães da raça Spitz e jogar beach tennis, que se tornou meu esporte favorito ultimamente.",
-    "about.ana.slideLabel": "Slide da Ana, 3 de 3",
-    "about.ana.label": "MENTE CRIATIVA",
+    "about.rafaela.text3": "Fora do trabalho, sou apaixonada pelas pequenas coisas que deixam a vida mais leve e pessoal, como passar tempo com meus cinco cães da raça Spitz ou jogar beach tennis, que se tornou meu esporte favorito ultimamente.",
     "about.ana.title": "Ana",
-    "about.ana.alt": "Retrato de Ana, mente criativa por trás da The Power Agency",
-    "about.ana.text1": "Oi, eu sou a Ana, uma das mentes criativas por trás da The Power Agency.",
-    "about.ana.text2": "Sou criadora de conteúdo e estrategista brasileira, atualmente vivendo em Paris, apaixonada por construir marcas com as quais as pessoas realmente se conectam. Entre campanhas, direção criativa e reuniões de estratégia, você provavelmente vai me encontrar correndo pelas ruas de Paris, planejando minha próxima viagem ou buscando inspiração na moda, no storytelling e na vida cotidiana.",
-    "about.ana.text3": "Minha jornada no digital começou muito antes da agência, como criadora de conteúdo. Foi assim que aprendi a transformar ideias em comunidades e marcas em experiências. Hoje, levo essa mesma visão para cada projeto que criamos na The Power Agency, unindo estratégia, criatividade e autenticidade para ajudar marcas a crescerem com propósito e personalidade.",
+    "about.ana.alt": "Retrato de Ana, cofundadora da The Power Agency",
+    "about.ana.role": "Direção criativa e de conteúdo",
+    "about.ana.text1": "Oi, eu sou a Ana! Lidero o lado criativo e de conteúdo da The Power Agency, combinando pesquisa cultural, comportamento nas redes sociais e pensamento criativo para transformar estratégia em comunicação relevante.",
+    "about.ana.text2": "Sou criadora de conteúdo e profissional de mídias sociais brasileira, atualmente vivendo em Paris, apaixonada por construir marcas com as quais as pessoas realmente se conectam.",
+    "about.ana.text3": "Entre campanhas, direção criativa e reuniões de estratégia, você provavelmente vai me encontrar correndo pelas ruas de Paris, planejando minha próxima viagem ou buscando inspiração na moda, no storytelling e na vida cotidiana.",
+    "about.ana.text4": "Minha jornada no digital começou muito antes da agência, como criadora de conteúdo. Aprendi a transformar ideias em comunidades e marcas em experiências. Hoje, levo essa mesma visão para cada projeto que criamos na The Power Agency, unindo estratégia, criatividade e autenticidade para ajudar marcas a crescer com propósito e personalidade.",
   },
 };
 let previousFocus = null;
@@ -456,6 +488,10 @@ const applyLanguage = (language, shouldPersist = false) => {
 
   document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
     element.setAttribute("alt", translate(element.dataset.i18nAlt));
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    element.setAttribute("placeholder", translate(element.dataset.i18nPlaceholder));
   });
 
   languageButtons.forEach((button) => {
@@ -550,7 +586,52 @@ const closeHotspots = (exceptButton = null) => {
   });
 };
 
+const formatApplicationMessage = (answers, revenue) => {
+  const lines = [translate("application.messageTitle"), ""];
+  const addAnswer = (labelKey, value) => {
+    if (value) lines.push(`${translate(labelKey)}: ${value}`);
+  };
+
+  addAnswer("application.name", answers.get("name")?.trim());
+  addAnswer("application.whatsapp", answers.get("whatsapp")?.trim());
+  addAnswer("application.company", answers.get("company")?.trim());
+  addAnswer("application.industry", answers.get("industry")?.trim());
+  addAnswer("application.instagram", answers.get("instagram")?.trim());
+  addAnswer("application.website", answers.get("website")?.trim());
+  addAnswer("application.revenue", revenue);
+
+  const paidMediaKey = {
+    google: "application.paidGoogle",
+    meta: "application.paidMeta",
+    both: "application.paidBoth",
+    none: "application.paidNone",
+  }[answers.get("paidMedia")];
+  addAnswer("application.paid", paidMediaKey ? translate(paidMediaKey) : "");
+
+  return lines.join("\n");
+};
+
 applyLanguage(getStoredLanguage());
+
+const applicationForm = document.querySelector("[data-application-form]");
+const applicationPhone = applicationForm?.elements.whatsapp;
+
+applicationPhone?.addEventListener("input", () => applicationPhone.setCustomValidity(""));
+applicationForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const phoneDigits = applicationPhone.value.replace(/\D/g, "");
+  if (phoneDigits.length < 10 || phoneDigits.length > 15) {
+    applicationPhone.setCustomValidity(translate("application.invalidPhone"));
+    applicationPhone.reportValidity();
+    return;
+  }
+
+  const answers = new FormData(applicationForm);
+  const revenue = applicationForm.elements.revenue.selectedOptions[0].textContent.trim();
+  const message = formatApplicationMessage(answers, revenue);
+  window.location.assign(`https://wa.me/33749716210?text=${encodeURIComponent(message)}`);
+});
 
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -650,195 +731,3 @@ if ("IntersectionObserver" in window) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
-
-/* ==========================================================================
-   ABOUT CAROUSEL LOGIC
-   ========================================================================== */
-const initAboutCarousel = () => {
-  const slides = Array.from(document.querySelectorAll("[data-about-slide]"));
-  const indicators = Array.from(document.querySelectorAll("[data-about-carousel-indicators] button"));
-  const prevBtn = document.querySelector("[data-about-carousel-prev]");
-  const nextBtn = document.querySelector("[data-about-carousel-next]");
-  const carouselContainer = document.querySelector("[data-about-carousel]");
-  
-  if (!slides.length) return;
-  
-  let currentSlide = 0;
-  let autoplayTimer = null;
-  let resumeTimer = null;
-  let isHovering = false;
-  let hasFocusWithin = false;
-  const autoplayDelay = 9000;
-  const resumeDelay = 11000;
-
-  const canAutoplay = () => !reducedMotion && !isHovering && !hasFocusWithin && !document.hidden;
-  
-  const updateCarousel = (index) => {
-    if (index >= slides.length) {
-      currentSlide = 0;
-    } else if (index < 0) {
-      currentSlide = slides.length - 1;
-    } else {
-      currentSlide = index;
-    }
-    
-    slides.forEach((slide, idx) => {
-      const isActive = idx === currentSlide;
-      slide.classList.toggle("is-active", isActive);
-      if (isActive) {
-        slide.removeAttribute("aria-hidden");
-        slide.querySelectorAll("a, button, input").forEach((el) => el.removeAttribute("tabindex"));
-      } else {
-        slide.setAttribute("aria-hidden", "true");
-        slide.querySelectorAll("a, button, input").forEach((el) => el.setAttribute("tabindex", "-1"));
-      }
-    });
-    
-    indicators.forEach((indicator, idx) => {
-      const isActive = idx === currentSlide;
-      indicator.classList.toggle("is-active", isActive);
-      indicator.setAttribute("aria-selected", String(isActive));
-      indicator.setAttribute("tabindex", isActive ? "0" : "-1");
-    });
-  };
-  
-  const nextSlide = () => {
-    updateCarousel(currentSlide + 1);
-  };
-  
-  const prevSlide = () => {
-    updateCarousel(currentSlide - 1);
-  };
-  
-  const stopAutoplay = () => {
-    if (autoplayTimer) {
-      window.clearInterval(autoplayTimer);
-      autoplayTimer = null;
-    }
-
-    carouselContainer?.classList.remove("is-autoplaying");
-  };
-
-  const clearResumeTimer = () => {
-    if (resumeTimer) {
-      window.clearTimeout(resumeTimer);
-      resumeTimer = null;
-    }
-  };
-
-  const startAutoplay = () => {
-    clearResumeTimer();
-    stopAutoplay();
-
-    if (!canAutoplay()) return;
-
-    carouselContainer?.classList.add("is-autoplaying");
-    autoplayTimer = window.setInterval(nextSlide, autoplayDelay);
-  };
-
-  const scheduleAutoplayResume = (delay = resumeDelay) => {
-    clearResumeTimer();
-
-    if (reducedMotion) return;
-
-    resumeTimer = window.setTimeout(() => {
-      if (canAutoplay()) {
-        startAutoplay();
-      }
-    }, delay);
-  };
-  
-  const handleManualInteraction = () => {
-    stopAutoplay();
-    scheduleAutoplayResume();
-  };
-  
-  prevBtn?.addEventListener("click", () => {
-    prevSlide();
-    handleManualInteraction();
-  });
-  
-  nextBtn?.addEventListener("click", () => {
-    nextSlide();
-    handleManualInteraction();
-  });
-  
-  indicators.forEach((indicator, idx) => {
-    indicator.addEventListener("click", () => {
-      updateCarousel(idx);
-      handleManualInteraction();
-    });
-    
-    indicator.addEventListener("keydown", (e) => {
-      if (e.key === "ArrowRight" || e.key === "ArrowDown") {
-        e.preventDefault();
-        const nextIdx = (idx + 1) % indicators.length;
-        indicators[nextIdx].focus();
-        updateCarousel(nextIdx);
-        handleManualInteraction();
-      } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
-        e.preventDefault();
-        const prevIdx = (idx - 1 + indicators.length) % indicators.length;
-        indicators[prevIdx].focus();
-        updateCarousel(prevIdx);
-        handleManualInteraction();
-      }
-    });
-  });
-  
-  if (carouselContainer) {
-    carouselContainer.addEventListener("mouseenter", () => {
-      isHovering = true;
-      clearResumeTimer();
-      stopAutoplay();
-    });
-
-    carouselContainer.addEventListener("mouseleave", () => {
-      isHovering = false;
-      scheduleAutoplayResume(1400);
-    });
-
-    carouselContainer.addEventListener("focusin", () => {
-      hasFocusWithin = true;
-      clearResumeTimer();
-      stopAutoplay();
-    });
-
-    carouselContainer.addEventListener("focusout", () => {
-      window.requestAnimationFrame(() => {
-        if (!carouselContainer.contains(document.activeElement)) {
-          hasFocusWithin = false;
-          scheduleAutoplayResume(5000);
-        }
-      });
-    });
-
-    carouselContainer.addEventListener("touchstart", () => {
-      stopAutoplay();
-      scheduleAutoplayResume();
-    }, { passive: true });
-
-    carouselContainer.addEventListener("pointerdown", (event) => {
-      if (event.pointerType !== "mouse") {
-        stopAutoplay();
-        scheduleAutoplayResume();
-      }
-    });
-  }
-
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden) {
-      clearResumeTimer();
-      stopAutoplay();
-    } else {
-      scheduleAutoplayResume(1200);
-    }
-  });
-  
-  // Set initial state
-  updateCarousel(0);
-  startAutoplay();
-};
-
-// Initialize the About carousel on load
-initAboutCarousel();
