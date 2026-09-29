@@ -28,7 +28,7 @@ const translations = {
     "menu.close": "Close menu",
     "menu.dialog": "Main menu",
     "hero.visualLabel": "Visual composition of the Think, Plan and Action methodology",
-    "hero.eyebrow": "International Strategic Marketing Agency",
+    "hero.eyebrow": "International Boutique Marketing Agency",
     "hero.headline": "Boutique marketing for brands ready to grow with direction.",
     "hero.text":
       "The Power Agency combines analysis, planning and execution to build authentic, intelligent communications connected to each brand's positioning.",
@@ -252,7 +252,7 @@ const translations = {
     "menu.close": "Fechar menu",
     "menu.dialog": "Menu principal",
     "hero.visualLabel": "Composição visual da metodologia Think, Plan and Action",
-    "hero.eyebrow": "Agência internacional de marketing estratégico",
+    "hero.eyebrow": "Agência internacional de marketing boutique",
     "hero.headline": "Marketing boutique para marcas que querem crescer com direção.",
     "hero.text":
       "A The Power Agency une análise, planejamento e execução para construir comunicações autênticas, inteligentes e conectadas ao posicionamento de cada marca.",
