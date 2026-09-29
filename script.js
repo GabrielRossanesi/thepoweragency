@@ -92,6 +92,14 @@ const translations = {
     "method.action.title": "Strategy that stays involved.",
     "method.action.text":
       "Strategy only matters when it survives the real world. That’s why we remain involved in content, campaigns, performance and ongoing decisions. We learn from the market and refine the direction continuously.",
+    "method.action.item1": "Content production",
+    "method.action.item2": "Publishing",
+    "method.action.item3": "Campaigns",
+    "method.action.item4": "Social media management",
+    "method.action.item5": "Results tracking",
+    "method.action.item6": "Monthly meetings",
+    "method.action.item7": "Strategic improvements",
+    "method.action.item8": "Seasonal actions",
     "difference.label": "Differentials",
     "difference.title": "Strategy, intention and depth before every publication.",
     "difference.text":
@@ -300,6 +308,14 @@ const translations = {
     "method.action.title": "Estratégia com presença contínua.",
     "method.action.text":
       "A estratégia só importa quando funciona no mundo real. Por isso, seguimos envolvidos no conteúdo, nas campanhas, na performance e nas decisões do dia a dia. Aprendemos com o mercado e refinamos a direção continuamente.",
+    "method.action.item1": "Produção de conteúdo",
+    "method.action.item2": "Publicações",
+    "method.action.item3": "Campanhas",
+    "method.action.item4": "Gestão de redes sociais",
+    "method.action.item5": "Acompanhamento de resultados",
+    "method.action.item6": "Reuniões mensais",
+    "method.action.item7": "Aprimoramentos estratégicos",
+    "method.action.item8": "Ações sazonais",
     "difference.label": "Diferenciais",
     "difference.title": "Estratégia, intenção e profundidade antes de qualquer publicação.",
     "difference.text":

@@ -1090,6 +1090,10 @@ ul {
   line-height: 1.7;
 }
 
+.method-step--action ul {
+  margin-top: 24px;
+}
+
 .section--difference {
   background:
     linear-gradient(90deg, rgba(var(--olive-rgb), 0.1), transparent 42%),
