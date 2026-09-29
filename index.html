@@ -265,7 +265,9 @@
         </div>
       </section>
 
-      <section class="founders-intro" id="sobre" aria-labelledby="founders-title">
+      <div class="founders-carousel" id="sobre" data-founders-carousel>
+        <div class="founders-carousel__stage">
+      <section class="founders-intro founders-carousel__slide is-active" id="founders-intro-slide" aria-labelledby="founders-title" role="tabpanel" data-founders-slide="0">
         <div class="founders-intro__inner">
           <div class="founders-intro__heading reveal">
             <p class="section-label" data-i18n="founders.label">Meet the founders</p>
@@ -281,7 +283,7 @@
         </div>
       </section>
 
-      <section class="founder-profile founder-profile--rafaela" id="rafaela" aria-labelledby="rafaela-title">
+      <section class="founder-profile founder-profile--rafaela founders-carousel__slide" id="rafaela" aria-labelledby="rafaela-title" role="tabpanel" data-founders-slide="1">
         <div class="founder-profile__inner">
           <figure class="founder-profile__portrait reveal">
             <img src="assets/founders/RAFAELA-TPA.jpg" alt="Portrait of Rafaela, co-founder of The Power Agency" data-i18n-alt="about.rafaela.alt" loading="lazy" />
@@ -299,7 +301,7 @@
         </div>
       </section>
 
-      <section class="founder-profile founder-profile--ana" id="ana" aria-labelledby="ana-title">
+      <section class="founder-profile founder-profile--ana founders-carousel__slide" id="ana" aria-labelledby="ana-title" role="tabpanel" data-founders-slide="2">
         <div class="founder-profile__inner">
           <figure class="founder-profile__portrait reveal">
             <img src="assets/founders/ANA-TPA.PNG" alt="Portrait of Ana, co-founder of The Power Agency" data-i18n-alt="about.ana.alt" loading="lazy" />
@@ -317,6 +319,18 @@
           </div>
         </div>
       </section>
+
+        </div>
+        <div class="founders-carousel__controls" aria-label="Founders carousel controls" data-i18n-aria-label="founders.carousel.controls">
+          <button class="founders-carousel__arrow" type="button" aria-label="Previous slide" data-i18n-aria-label="founders.carousel.prev" data-founders-prev><span aria-hidden="true">←</span></button>
+          <div class="founders-carousel__tabs" role="tablist" aria-label="Founders slides" data-i18n-aria-label="founders.carousel.tabs">
+            <button class="founders-carousel__tab is-active" type="button" role="tab" aria-selected="true" aria-controls="founders-intro-slide" data-founders-tab="0" data-i18n="founders.carousel.intro">Our story</button>
+            <button class="founders-carousel__tab" type="button" role="tab" aria-selected="false" aria-controls="rafaela" data-founders-tab="1" data-i18n="founders.carousel.rafaela" tabindex="-1">Rafaela</button>
+            <button class="founders-carousel__tab" type="button" role="tab" aria-selected="false" aria-controls="ana" data-founders-tab="2" data-i18n="founders.carousel.ana" tabindex="-1">Ana</button>
+          </div>
+          <button class="founders-carousel__arrow" type="button" aria-label="Next slide" data-i18n-aria-label="founders.carousel.next" data-founders-next><span aria-hidden="true">→</span></button>
+        </div>
+      </div>
 
       <section class="fit" id="fit" aria-labelledby="fit-title">
         <div class="fit__inner">

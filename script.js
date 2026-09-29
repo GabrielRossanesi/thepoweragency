@@ -213,6 +213,13 @@ const translations = {
     "founders.story2": "And because we have worked, thought and built alongside each other for years, our clients don’t get disconnected departments or layers of communication.",
     "founders.closing": "They get two complementary minds thinking closely about the same brand. Different strengths, the same standard.",
     "founders.profileLabel": "The founders",
+    "founders.carousel.controls": "Founders carousel controls",
+    "founders.carousel.tabs": "Founders slides",
+    "founders.carousel.prev": "Previous slide",
+    "founders.carousel.next": "Next slide",
+    "founders.carousel.intro": "Our story",
+    "founders.carousel.rafaela": "Rafaela",
+    "founders.carousel.ana": "Ana",
     "about.rafaela.title": "Rafaela",
     "about.rafaela.alt": "Portrait of Rafaela, co-founder of The Power Agency",
     "about.rafaela.role": "Strategy & Brand Direction",
@@ -430,6 +437,13 @@ const translations = {
     "founders.story2": "E, como trabalhamos, pensamos e construímos juntas há anos, nossos clientes não encontram departamentos desconectados nem camadas de comunicação.",
     "founders.closing": "Encontram duas mentes complementares pensando de perto sobre a mesma marca. Forças diferentes, o mesmo padrão.",
     "founders.profileLabel": "As fundadoras",
+    "founders.carousel.controls": "Controles do carrossel das fundadoras",
+    "founders.carousel.tabs": "Slides das fundadoras",
+    "founders.carousel.prev": "Slide anterior",
+    "founders.carousel.next": "Próximo slide",
+    "founders.carousel.intro": "Nossa história",
+    "founders.carousel.rafaela": "Rafaela",
+    "founders.carousel.ana": "Ana",
     "about.rafaela.title": "Rafaela",
     "about.rafaela.alt": "Retrato de Rafaela, cofundadora da The Power Agency",
     "about.rafaela.role": "Estratégia e direção de marca",
@@ -616,6 +630,132 @@ const formatApplicationMessage = (answers, revenue) => {
 };
 
 applyLanguage(getStoredLanguage());
+
+const foundersCarousel = document.querySelector("[data-founders-carousel]");
+if (foundersCarousel) {
+  const slides = Array.from(foundersCarousel.querySelectorAll("[data-founders-slide]"));
+  const tabs = Array.from(foundersCarousel.querySelectorAll("[data-founders-tab]"));
+  const autoplayDelay = 14000;
+  let activeIndex = 0;
+  let autoplayTimer;
+  let resumeTimer;
+  let isVisible = false;
+  let isHovering = false;
+  let hasFocus = false;
+  let touchStart;
+
+  const stopAutoplay = () => {
+    window.clearInterval(autoplayTimer);
+    autoplayTimer = undefined;
+    foundersCarousel.classList.remove("is-playing");
+  };
+
+  const canAutoplay = () => !reducedMotion && isVisible && !document.hidden && !isHovering && !hasFocus;
+  const startAutoplay = () => {
+    window.clearTimeout(resumeTimer);
+    resumeTimer = undefined;
+    stopAutoplay();
+    if (!canAutoplay()) return;
+    foundersCarousel.classList.add("is-playing");
+    autoplayTimer = window.setInterval(() => showSlide(activeIndex + 1), autoplayDelay);
+  };
+
+  const showSlide = (index) => {
+    activeIndex = (index + slides.length) % slides.length;
+    slides.forEach((slide, slideIndex) => {
+      const active = slideIndex === activeIndex;
+      slide.classList.toggle("is-active", active);
+      slide.toggleAttribute("inert", !active);
+      if (active) slide.removeAttribute("aria-hidden");
+      else slide.setAttribute("aria-hidden", "true");
+    });
+    tabs.forEach((tab, tabIndex) => {
+      const active = tabIndex === activeIndex;
+      tab.classList.toggle("is-active", active);
+      tab.setAttribute("aria-selected", String(active));
+      tab.tabIndex = active ? 0 : -1;
+    });
+    if (autoplayTimer) {
+      foundersCarousel.classList.remove("is-playing");
+      void foundersCarousel.offsetWidth;
+      foundersCarousel.classList.add("is-playing");
+    }
+  };
+
+  const pauseForInteraction = () => {
+    stopAutoplay();
+    window.clearTimeout(resumeTimer);
+    resumeTimer = window.setTimeout(startAutoplay, 18000);
+  };
+
+  foundersCarousel.querySelector("[data-founders-prev]").addEventListener("click", () => {
+    showSlide(activeIndex - 1);
+    pauseForInteraction();
+  });
+  foundersCarousel.querySelector("[data-founders-next]").addEventListener("click", () => {
+    showSlide(activeIndex + 1);
+    pauseForInteraction();
+  });
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      showSlide(index);
+      pauseForInteraction();
+    });
+    tab.addEventListener("keydown", (event) => {
+      if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+      event.preventDefault();
+      const nextIndex = event.key === "Home" ? 0 : event.key === "End" ? slides.length - 1 :
+        (index + (event.key === "ArrowRight" ? 1 : -1) + slides.length) % slides.length;
+      showSlide(nextIndex);
+      tabs[nextIndex].focus();
+      pauseForInteraction();
+    });
+  });
+
+  foundersCarousel.addEventListener("mouseenter", () => { isHovering = true; stopAutoplay(); });
+  foundersCarousel.addEventListener("mouseleave", () => { isHovering = false; if (!resumeTimer) startAutoplay(); });
+  foundersCarousel.addEventListener("focusin", () => { hasFocus = true; stopAutoplay(); });
+  foundersCarousel.addEventListener("focusout", () => {
+    window.requestAnimationFrame(() => {
+      if (foundersCarousel.contains(document.activeElement)) return;
+      hasFocus = false;
+      if (!resumeTimer) startAutoplay();
+    });
+  });
+  foundersCarousel.addEventListener("touchstart", (event) => {
+    touchStart = { x: event.touches[0].clientX, y: event.touches[0].clientY };
+    pauseForInteraction();
+  }, { passive: true });
+  foundersCarousel.addEventListener("touchend", (event) => {
+    if (!touchStart) return;
+    const dx = event.changedTouches[0].clientX - touchStart.x;
+    const dy = event.changedTouches[0].clientY - touchStart.y;
+    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) showSlide(activeIndex + (dx < 0 ? 1 : -1));
+    touchStart = undefined;
+  }, { passive: true });
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) stopAutoplay();
+    else startAutoplay();
+  });
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(([entry]) => {
+      isVisible = entry.isIntersecting;
+      if (isVisible) startAutoplay();
+      else stopAutoplay();
+    }, { threshold: 0.15 }).observe(foundersCarousel);
+  } else {
+    isVisible = true;
+    startAutoplay();
+  }
+  showSlide(0);
+  if (location.hash === "#rafaela") showSlide(1);
+  if (location.hash === "#ana") showSlide(2);
+  window.addEventListener("hashchange", () => {
+    if (location.hash === "#rafaela") showSlide(1);
+    else if (location.hash === "#ana") showSlide(2);
+    else if (location.hash === "#sobre") showSlide(0);
+  });
+}
 
 const applicationForm = document.querySelector("[data-application-form]");
 const applicationPhone = applicationForm?.elements.whatsapp;
